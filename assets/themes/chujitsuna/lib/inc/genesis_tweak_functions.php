@@ -524,21 +524,24 @@ class Description_Walker extends Walker_Nav_Menu
         $output .= "</li>\n";
     }
 }
+
 /**
  * Footer replacement with MSDSocial support
  */
 function msdlab_do_social_footer(){
     global $msd_social;
-    global $wp_filter;
-    //ts_var( $wp_filter['genesis_before_content_sidebar_wrap'] );
+    if(has_nav_menu('footer_menu')){$footer_menu .= wp_nav_menu( array( 'theme_location' => 'footer_menu','container_class' => 'ftr-menu ftr-links','echo' => FALSE ) );}
+    
     if($msd_social){
         $address = '<span itemprop="name">'.$msd_social->get_bizname().'</span> | <span itemprop="streetAddress">'.get_option('msdsocial_street').'</span>, <span itemprop="streetAddress">'.get_option('msdsocial_street2').'</span> | <span itemprop="addressLocality">'.get_option('msdsocial_city').'</span>, <span itemprop="addressRegion">'.get_option('msdsocial_state').'</span> <span itemprop="postalCode">'.get_option('msdsocial_zip').'</span> | '.$msd_social->get_digits();
-        $copyright = '&copy; '.date('Y').' '.$msd_social->get_bizname().' | An Equal Opportunity Employer | All Rights Reserved';
+        $copyright .= '&copy; Copyright '.date('Y').' '.$msd_social->get_bizname().' &middot; All Rights Reserved';
     } else {
-        $copyright = '&copy; '.date('Y').' '.get_bloginfo('name').' | An Equal Opportunity Employer | All Rights Reserved';
+        $copyright .= '&copy; Copyright '.date('Y').' '.get_bloginfo('name').' &middot; All Rights Reserved ';
     }
-    
-    print '<div id="footer-info">'.$copyright.'</div>';
+    print '<div class="row">';
+    print '<div id="footer-left" class="footer-left col-sm-6 social">'.$copyright.'</div>';
+    print '<div id="footer-right" class="footer-right col-sm-6 menu">'.$footer_menu.'</div>';
+    print '</div>';
 }
 
 

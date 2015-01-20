@@ -6569,11 +6569,6 @@ Site Navigation
   color: #532a44;
   text-decoration: none;
 }
-.nav-primary ul.menu > li.first-child a:before {
-  font-family: FontAwesome;
-  padding: 0 0.4rem 0 0.2rem;
-  content: "\f015";
-}
 .mainNav > ul > li.first > ul > li.title > ul > li > ul > li {
   padding: 3px 0;
 }
@@ -6977,6 +6972,30 @@ Footer Widgets
 }
 .footer-widgets a:hover {
   color: #ddd;
+}
+.footer-widgets .widget {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.footer-widgets .widget:before,
+.footer-widgets .widget:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.footer-widgets .widget:after {
+  clear: both;
+}
+.footer-widgets .widget:before,
+.footer-widgets .widget:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.footer-widgets .widget:after {
+  clear: both;
 }
 .footer-widgets .widget-title {
   color: #fff;
