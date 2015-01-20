@@ -18,6 +18,7 @@ article {
   padding-top: 0;
 }
 
+
 /* Column Widths and Positions
 --------------------------------------------- */
 
@@ -26,35 +27,34 @@ article {
 .content-sidebar-sidebar .content-sidebar-wrap,
 .sidebar-content-sidebar .content-sidebar-wrap,
 .sidebar-sidebar-content .content-sidebar-wrap {
-  /*width: 920px;*/
+  padding: 0;
 }
 
 .content-sidebar-sidebar .content-sidebar-wrap {
-  float: none;
+  float: left;
 }
 
 .sidebar-content-sidebar .content-sidebar-wrap,
 .sidebar-sidebar-content .content-sidebar-wrap {
-  float: none;
+  float: left;
 }
 
 /* Content */
 
-main.content {
-  float: none;
-  /*width: 740px;*/
+.content {
+  float: right;
 }
 
 .content-sidebar .content,
 .content-sidebar-sidebar .content,
 .sidebar-content-sidebar .content {
-  float: none;
+  float: left;
 }
 
 .content-sidebar-sidebar .content,
 .sidebar-content-sidebar .content,
 .sidebar-sidebar-content .content {
-  /*width: 520px;*/
+  flaot: left;
 }
 
 .full-width-content .content {
@@ -64,24 +64,26 @@ main.content {
 /* Primary Sidebar */
 
 .sidebar-primary {
-  float: none;
-  background: @offwhite;
-  padding: 0;
+  float: right;
+}
+.sidebar-content-sidebar .sidebar-primary {
+  padding-left: 0;
 }
 
 .sidebar-content .sidebar-primary,
 .sidebar-sidebar-content .sidebar-primary {
-  float: none;
+  float: left;
 }
 
 /* Secondary Sidebar */
 
 .sidebar-secondary {
-  float: none;
-  background: @offwhite;
-  padding: 2rem 1rem;
+  float: right;
 }
 
+.sidebar-content-sidebar .sidebar-secondary {
+  padding-left: 0;
+}
 .content-sidebar-sidebar .sidebar-secondary {
-  float: none;
+  float: right;
 }
