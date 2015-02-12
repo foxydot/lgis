@@ -4,7 +4,7 @@
 /* Font Stacks */
 .customsansserif,
 .customsanserif {
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -26,7 +26,7 @@
   background-color: #532a44;
   border-radius: 0;
   padding: 6px 24px;
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -47,4 +47,8 @@
   height: 0;
   clear: both;
   visibility: hidden;
+}
+P {
+  padding: 0;
+  margin: 0;
 }

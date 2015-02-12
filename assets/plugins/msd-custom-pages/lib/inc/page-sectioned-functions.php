@@ -55,7 +55,7 @@ class MSDSectionedPage{
             $pull = $i%2==1?'left':'right';
             $title = apply_filters('the_title',$sectioned_page_metabox->get_the_value('title'));
             $wrapped_title = trim($title) != ''?'<div class="section-title">
-        <h3 class="wrap">
+        <h3 class="wrap animated wow fadeInDown">
             '.$title.'
         </h3>
     </div>':'';
