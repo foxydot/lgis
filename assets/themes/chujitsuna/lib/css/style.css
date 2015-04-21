@@ -9018,7 +9018,7 @@ html {
 }
 body {
   background-color: #ffffff;
-  color: #1a1a1a;
+  color: #5f5f5f;
   font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -9040,11 +9040,11 @@ textarea:focus,
   transition: all 0.1s ease-in-out;
 }
 ::-moz-selection {
-  background-color: #1a1a1a;
+  background-color: #5f5f5f;
   color: #ffffff;
 }
 ::selection {
-  background-color: #1a1a1a;
+  background-color: #5f5f5f;
   color: #ffffff;
 }
 a {
@@ -9056,7 +9056,7 @@ a img {
   margin-bottom: -0.4rem;
 }
 a:hover {
-  color: #1a1a1a;
+  color: #5f5f5f;
 }
 a:focus {
   outline: 0;
@@ -9101,7 +9101,7 @@ blockquote::before {
   top: -10px;
 }
 .entry-content code {
-  background-color: #1a1a1a;
+  background-color: #5f5f5f;
   color: #cccccc;
 }
 cite {
@@ -9120,7 +9120,7 @@ h6 {
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.625;
-  color: #1a1a1a;
+  color: #5f5f5f;
   font-weight: 700;
   line-height: 1.2;
   margin: 0 0 16px;
@@ -9173,7 +9173,7 @@ textarea {
   background-color: #ffffff;
   border: 1px solid #323232;
   box-shadow: 1px 1px 3px #323232 inset;
-  color: #1a1a1a;
+  color: #5f5f5f;
   font-size: 14px;
   font-size: 1.4rem;
   padding: 16px;
@@ -9440,7 +9440,7 @@ img.alignright,
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.625;
-  color: #1a1a1a;
+  color: #5f5f5f;
   margin-bottom: 4px;
   margin-bottom: 0.4rem;
 }
@@ -9465,7 +9465,7 @@ img.alignright,
 .section-title a,
 .entry-title a,
 .sidebar .widget-title a {
-  color: #1a1a1a;
+  color: #5f5f5f;
 }
 .section-title a:hover,
 .entry-title a:hover {
@@ -9565,7 +9565,7 @@ Plugins
 }
 .enews-widget input:hover[type="submit"] {
   background-color: #ffffff;
-  color: #1a1a1a;
+  color: #5f5f5f;
 }
 /* Genesis Latest Tweets
 --------------------------------------------- */
@@ -9802,7 +9802,7 @@ Site Navigation
 ---------------------------------------------------------------------------------------------------- */
 .genesis-nav-menu {
   clear: both;
-  color: #006eae;
+  color: #0096d6;
   font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -9819,7 +9819,7 @@ Site Navigation
 .genesis-nav-menu .menu-item a,
 .genesis-nav-menu .separator a {
   border: none;
-  color: #006eae;
+  color: #0096d6;
   display: block;
   padding: 20px;
   padding: 2rem;
@@ -9827,10 +9827,10 @@ Site Navigation
 }
 .genesis-nav-menu .menu-item a:hover,
 .genesis-nav-menu .separator a:hover {
-  color: #006eae;
+  color: #0096d6;
 }
 .genesis-nav-menu .current-menu-item > a {
-  color: #006eae;
+  color: #0096d6;
 }
 .genesis-nav-menu .sub-menu {
   left: -9999px;
@@ -9919,7 +9919,7 @@ Site Navigation
   font-weight: 600;
 }
 .nav-primary li.menu-item a {
-  color: #525252;
+  color: #013d57;
   text-transform: uppercase;
   padding: 0;
 }
@@ -9940,7 +9940,7 @@ Site Navigation
 .nav-primary li.menu-item .sub-menu li.menu-item a {
   background-color: transparent;
   border: 0;
-  color: #525252;
+  color: #013d57;
   padding: 1rem 0;
   width: 100%;
 }
@@ -9952,7 +9952,7 @@ Site Navigation
   text-decoration: none;
 }
 .nav-primary li.separator {
-  color: #525252;
+  color: #013d57;
 }
 .nav-primary li:hover a,
 .nav-primary li.current-menu-item a,
@@ -9960,7 +9960,7 @@ Site Navigation
 .nav-primary li:hover a:hover,
 .nav-primary li.current-menu-item a:hover,
 .nav-primary li.current-menu-ancestor a:hover {
-  color: #006eae;
+  color: #0096d6;
   text-decoration: none;
 }
 .mainNav > ul > li.first > ul > li.title > ul > li > ul > li {
@@ -9984,7 +9984,7 @@ Site Navigation
   color: #323232;
 }
 .nav-secondary .wrap li.menu-item > a:hover {
-  color: #006eae;
+  color: #0096d6;
 }
 .nav-secondary .wrap li.menu-item ul {
   display: none;
@@ -10001,7 +10001,7 @@ Site Navigation
 }
 .nav-secondary .wrap li.menu-item ul li a {
   border: 0;
-  color: #1a1a1a;
+  color: #5f5f5f;
   width: auto;
   padding: 0 0 0 20px;
   background-position: left center;
@@ -10024,7 +10024,7 @@ article.entry {
   padding: 2rem 1rem;
 }
 .entry-content h3 {
-  color: #006eae;
+  color: #0096d6;
   text-transform: uppercase;
   border-bottom: 1px dotted #323232;
 }
@@ -10093,7 +10093,7 @@ article.entry {
   line-height: 1.625;
   text-transform: uppercase;
   font-weight: 500;
-  color: #1a1a1a;
+  color: #5f5f5f;
   line-height: 1.25;
   margin: 0;
 }
@@ -10114,7 +10114,7 @@ article.entry {
   font-size: 1.8rem;
   line-height: 1.625;
   font-weight: 300;
-  color: #1a1a1a;
+  color: #5f5f5f;
   line-height: 1.25;
 }
 /* Pagination
@@ -10342,14 +10342,14 @@ Sidebars
   text-align: center;
 }
 .sidebar .widget_sp_image .link a {
-  color: #1a1a1a;
+  color: #5f5f5f;
   border: 0;
 }
 .sidebar .widget_sp_image .link a i {
   color: #ff9900;
 }
 .sidebar span.fa-stack {
-  color: #006eae;
+  color: #0096d6;
 }
 /*
 Footer Widgets
@@ -10410,7 +10410,7 @@ Footer Widgets
 Site Footer
 ---------------------------------------------------------------------------------------------------- */
 .site-footer {
-  background-color: #1a1a1a;
+  background-color: #5f5f5f;
   color: #cccccc;
   font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
@@ -12141,7 +12141,7 @@ address {
     display: inline-block;
     width: 100%;
     text-indent: 20px;
-    background: #006eae;
+    background: #0096d6;
     min-height: 46px;
     padding-top: 14px;
     position: relative;
@@ -12162,7 +12162,7 @@ address {
     padding: 0;
   }
   .nav-responsive a#pull ul#mobile_menu li a {
-    background: #006eae;
+    background: #0096d6;
     color: #ffffff;
     display: block;
     width: 100%;
@@ -12174,7 +12174,7 @@ address {
     right: 15px;
   }
   .nav-responsive a#pull ul#mobile_menu li a:hover {
-    background: #008ee1;
+    background: #0ab6ff;
   }
   .nav-responsive a#pull ul#mobile_menu li .toggle-switch {
     margin-right: 12px;
@@ -12204,7 +12204,7 @@ address {
     display: none;
   }
   .nav-responsive a#pull ul#mobile_menu li.current-menu-item a {
-    background: #009efb;
+    background: #23bdff;
   }
   .nav-responsive a#pull:hover {
     text-decoration: none;
@@ -12214,7 +12214,7 @@ address {
     font-family: 'FontAwesome';
     font-size: 2.2rem;
     text-indent: 0;
-    color: #006eae;
+    color: #0096d6;
     text-align: center;
     width: 30px;
     height: 30px;

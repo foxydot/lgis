@@ -179,7 +179,7 @@
   font-size: 2.8rem;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 2px 2px 4px #1a1a1a;
+  text-shadow: 2px 2px 4px #5f5f5f;
 }
 .post-type-archive-project #portfolio-projects article .image-widget-background .fuzzybubble .entry-title a {
   color: #ffffff;
@@ -194,7 +194,7 @@
   color: #ffffff;
   font-weight: 500;
   border: 0;
-  text-shadow: 2px 2px 4px #1a1a1a;
+  text-shadow: 2px 2px 4px #5f5f5f;
 }
 .post-type-archive-project #portfolio-projects article .image-widget-background .fuzzybubble .entry-permalink a {
   background-color: #532a44;
@@ -232,7 +232,7 @@
   font-size: 2.8rem;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 2px 2px 4px #1a1a1a;
+  text-shadow: 2px 2px 4px #5f5f5f;
 }
 .post-type-archive-project #portfolio-projects article.more-projects .image-widget-background .fuzzybubble .entry-title a {
   color: #ffffff;
@@ -247,5 +247,5 @@
   color: #ffffff;
   font-weight: 500;
   border: 0;
-  text-shadow: 2px 2px 4px #1a1a1a;
+  text-shadow: 2px 2px 4px #5f5f5f;
 }
