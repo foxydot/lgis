@@ -178,50 +178,35 @@ function msdlab_do_title_area(){
     $postid = is_admin()?$_GET['post']:$post->ID;
     $template_file = get_post_meta($postid,'_wp_page_template',TRUE);
     if ($template_file == 'page-sectioned.php') {
-    } else { 
         print '<div id="page-title-area" class="page-title-area">';
-        print '<div class="wrap">';
         do_action('msdlab_title_area');
         print '</div>';
+    } else { 
+        print '<div id="page-title-area" class="page-title-area">';
+        do_action('msdlab_title_area');
         print '</div>';
     }
 }
 
 function msdlab_do_section_title(){
-    if(is_page()){
+    if(is_front_page()){
+        
+    } elseif(is_page()){
         global $post;
         if(get_section_title()!=$post->post_title){
-            add_action('genesis_before_entry','genesis_do_post_title');
+            add_action('genesis_entry_header','genesis_do_post_title',5);
         }
+        print '<div class="banner clearfix" style="background-image:url('.msdlab_get_thumbnail_url($post->ID,'full').')">';
+        print '<div class="texturize">';
+        print '<div class="gradient">';
+        print '<div class="wrap">';
         print '<h2 class="section-title">';
         print get_section_title();
         print '</h2>';
-    } elseif(is_cpt('project')) {
-        if(is_single()){
-            add_filter('genesis_post_title_text','msdlab_add_portfolio_prefix');
-            genesis_do_post_title();
-            remove_filter('genesis_post_title_text','msdlab_add_portfolio_prefix');
-        } if(is_post_type_archive('project')){
-            print '<h2 class="section-title">';
-            print 'Portfolio';
-            print '</h2>'; 
-        }
-    } elseif(is_cpt('event')) {
-        if(is_single()){
-            genesis_do_post_title();
-        } if(is_post_type_archive('event')){
-            print '<h2 class="section-title">';
-            print 'Events';
-            print '</h2>'; 
-        }
-    } elseif(is_cpt('testimonial')) {
-        if(is_single()){
-            genesis_do_post_title(); //this should never happen
-        } if(is_post_type_archive('testimonial')){
-            print '<h2 class="section-title">';
-            print 'Testimonials';
-            print '</h2>'; 
-        }
+        print '</div>';
+        print '</div>';
+        print '</div>';
+        print '</div>';
     } elseif(is_single()) {
         genesis_do_post_title();
     } else {

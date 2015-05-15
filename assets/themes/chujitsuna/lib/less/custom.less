@@ -1,12 +1,14 @@
 .page-title-area{
-  background: @wine;
+  background: @dkgrey;
   .section-title,.page-title,.entry-title{
-    padding: 1.2rem 0;
+    min-height: 170px;
+    padding: 1em 0;
     margin:0;
-    .customheader(3);
+    .customheader(4.5);
     text-transform: uppercase;
     color: @white;
-    font-weight: 300;
+    text-shadow: 0 0 8px @dkgrey;
+    font-weight: 700;
     a, a:visited {
       color: @white;
       opacity: 0.5;
@@ -23,18 +25,56 @@
   position: relative;
 }
 
-
-.archive-description{
-    padding: 3rem;
-    border: 0;
-    margin-bottom: 0;
-    h1{
-    .customheader(2.2);
+.entry-content{
+  h1{
     font-weight: 300;
-    color: @wine;
-    line-height: 1.25;
-      }
+    &:after{
+      width: 100px;
+      height: 3px;
+      background: @blue;
+      content: ' ';
+      display: block;
+      margin: 1.6rem 0;
+    }
   }
+  h2{}
+  h3{}
+  h4{
+    font-weight: 700;
+  }
+  ol{
+    counter-reset:li;
+    margin: 0;
+    padding: 0;
+    li{
+      list-style: none;
+      margin: 0 0 .5em 1.95em;
+      padding: .5em 1em;
+      position: relative;
+      &:before{
+        background: @dkblue;
+        color: @white;
+        content: counter(li);
+        counter-increment:li;
+        font-size: 1.2em;
+        line-height:1em;
+        padding: .5em 0;
+        position: absolute;
+        top: .4em;
+        left: -1.6em;
+        text-align: center;
+        width: 2em;
+      }
+    }
+  }
+  ul{
+    margin-left: 2em;
+    li{
+      
+    }
+  }
+}
+
 .page-template-page-sectioned{
   .site-inner,.content-sidebar-wrap,main{
     padding-left:0;

@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: MSD Specialty Pages
-Description: Framework to create specialty templated pages with custom backends. Currently supports two types of LayerCake design structures.
+Plugin Name: MSD  Bootstrap Tools
+Description: Some bootstrap tools
 Author: MSDLAB
 Version: 0.1.3
 Author URI: http://msdlab.com
@@ -12,19 +12,10 @@ if(!class_exists('GitHubPluginUpdater')){
 }
 
 if ( is_admin() ) {
-    new GitHubPluginUpdater( __FILE__, 'msdlab', "msd-specialty-pages" );
+    new GitHubPluginUpdater( __FILE__, 'msdlab', "msd-bootstrap-tools" );
 }
 
-if(!class_exists('WPAlchemy_MetaBox')){
-    if(!include_once (WP_CONTENT_DIR.'/wpalchemy/MetaBox.php'))
-    include_once (plugin_dir_path(__FILE__).'/lib/wpalchemy/MetaBox.php');
-}
-global $wpalchemy_media_access;
-if(!class_exists('WPAlchemy_MediaAccess')){
-    if(!include_once (WP_CONTENT_DIR.'/wpalchemy/MediaAccess.php'))
-    include_once (plugin_dir_path(__FILE__).'/lib/wpalchemy/MediaAccess.php');
-}
-global $msd_custom_pages;
+global $msd_bootstrap_tools;
 
 /*
  * Pull in some stuff from other files
@@ -55,28 +46,28 @@ if(!function_exists('requireDir')){
         unset($dh, $dir, $file, $requiredFile);
     }
 }
-if (!class_exists('MSDCustomPages')) {
-    class MSDCustomPages {
+if (!class_exists('MSDBootstrapTools')) {
+    class MSDBootstrapTools {
         //Properites
         /**
          * @var string The plugin version
          */
-        var $version = '0.0.1';
+        var $version = '0.1.3';
         
         /**
          * @var string The options string name for this plugin
          */
-        var $optionsName = 'msd_custom_pages_options';
+        var $optionsName = 'msd_bootstrap_tools_options';
         
         /**
          * @var string $nonce String used for nonce security
          */
-        var $nonce = 'msd_custom_pages-update-options';
+        var $nonce = 'msd_bootstrap_tools-update-options';
         
         /**
          * @var string $localizationDomain Domain used for localization
          */
-        var $localizationDomain = "msd_custom_pages";
+        var $localizationDomain = "msd_bootstrap_tools";
         
         /**
          * @var string $pluginurl The path to this plugin
@@ -106,18 +97,10 @@ if (!class_exists('MSDCustomPages')) {
             register_activation_hook(__FILE__, array(&$this,'check_requirements'));
             //get sub-packages
             requireDir(plugin_dir_path(__FILE__).'/lib/inc');
+            add_action( 'wp_enqueue_scripts', array( &$this, 'maybe_load_bootstrap' ), 30 );
             //here are some examples to get started with
-            if(class_exists('PageTemplater')){
-                add_action( 'plugins_loaded', array( 'PageTemplater', 'get_instance' ) );
-            }
-            if(class_exists('MSDSimpleSectionedPage')){
-                add_action('admin_print_footer_scripts',array('MSDSimpleSectionedPage','info_footer_hook') ,100);     
-                add_action('admin_enqueue_scripts',array('MSDSimpleSectionedPage','enqueue_admin')); 
-            }
-            if(class_exists('MSDSectionedPage')){
-                add_action('admin_print_footer_scripts',array('MSDSectionedPage','info_footer_hook') ,100);     
-                add_action('admin_enqueue_scripts',array('MSDSectionedPage','enqueue_admin')); 
-                add_action( 'init', array( 'MSDSectionedPage', 'add_metaboxes' ) );
+            if(class_exists('MSDBootstrapShortcodes')){
+                add_action( 'plugins_loaded', array( 'MSDBootstrapShortcodes', 'get_instance' ) );
             }
         }
 
@@ -169,23 +152,19 @@ if (!class_exists('MSDCustomPages')) {
             
         }
         /***************************/
+        
+        function maybe_load_bootstrap(){
+            if(!wp_script_is( 'bootstrap-jquery', $list = 'enqueued' ) && !wp_script_is( 'bootstrap', $list = 'enqueued' )){
+                wp_enqueue_script('bootstrap-jquery','//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js',array('jquery'));
+            }
+            if(!wp_style_is( 'bootstrap-style', $list = 'enqueued' ) && !wp_style_is( 'bootstrap', $list = 'enqueued' )){
+                wp_enqueue_style('bootstrap-style','//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css');
+            }
+        }
+        
+        
   } //End Class
 } //End if class exists statement
 
 //instantiate
-$msd_custom_pages = new MSDCustomPages();
-
-if(!function_exists('get_attachment_id_from_src')){
-    function get_attachment_id_from_src ($src) {
-      global $wpdb;
-      $reg = "/-[0-9]+x[0-9]+?.(jpg|jpeg|png|gif)$/i";
-      $src1 = preg_replace($reg,'',$src);
-      if($src1 != $src){
-          $ext = pathinfo($src, PATHINFO_EXTENSION);
-          $src = $src1 . '.' .$ext;
-      }
-      $query = "SELECT ID FROM {$wpdb->posts} WHERE guid='$src'";
-      $id = $wpdb->get_var($query);
-      return $id;
-    }
-}
+$msd_bootstrap_tools = new MSDBootstrapTools();
