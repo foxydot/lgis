@@ -123,12 +123,13 @@ Site Navigation
   li.menu-item{
     font-size: 14px;
     font-size: 1.4rem;
-    padding: 1rem 1.2rem;
+    padding: 1rem 1.2rem 0;
     font-weight: 600;
     a{
       color: @dkblue;
       text-transform: uppercase;
-      padding: 0;
+      padding: 0 0 1em 0;
+      border-bottom: 3px solid fade(@white,0%);
     }
     .sub-menu{
       background-color: @white;
@@ -162,6 +163,7 @@ Site Navigation
     a, a:hover{
       color: @blue;
       text-decoration: none;
+      border-bottom: 3px solid @blue;
       }
   }
   li.last-child{

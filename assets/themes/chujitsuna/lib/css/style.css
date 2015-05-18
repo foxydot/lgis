@@ -9728,6 +9728,10 @@ img#wpstats {
   text-decoration: none;
   background-color: #0096d6;
 }
+.widget_advanced_menu .menu > li.current-menu-item li.current-menu-item a,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.current-menu-item a {
+  background-color: #0096d6;
+}
 /* Pre Header */
 .pre-header {
   background: #d6b293;
@@ -10044,13 +10048,14 @@ Site Navigation
 .nav-primary li.menu-item {
   font-size: 14px;
   font-size: 1.4rem;
-  padding: 1rem 1.2rem;
+  padding: 1rem 1.2rem 0;
   font-weight: 600;
 }
 .nav-primary li.menu-item a {
   color: #013d57;
   text-transform: uppercase;
-  padding: 0;
+  padding: 0 0 1em 0;
+  border-bottom: 3px solid rgba(255, 255, 255, 0);
 }
 .nav-primary li.menu-item .sub-menu {
   background-color: #ffffff;
@@ -10091,6 +10096,7 @@ Site Navigation
 .nav-primary li.current-menu-ancestor a:hover {
   color: #0096d6;
   text-decoration: none;
+  border-bottom: 3px solid #0096d6;
 }
 .mainNav > ul > li.first > ul > li.title > ul > li > ul > li {
   padding: 3px 0;
@@ -10628,6 +10634,11 @@ Site Footer
   display: block;
   margin: 1.6rem 0;
 }
+.entry-content h2 {
+  color: #0096d6;
+  font-size: 1.2em;
+  font-weight: 400;
+}
 .entry-content h4 {
   font-weight: 700;
 }
@@ -10658,6 +10669,10 @@ Site Footer
 }
 .entry-content ul {
   margin-left: 2em;
+}
+.page-child.section-commercial-insurance .entry-title,
+.page-child.section-health-wellness .entry-title {
+  display: none;
 }
 .page-template-page-sectioned .site-inner,
 .page-template-page-sectioned .content-sidebar-wrap,
