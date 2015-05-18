@@ -9721,6 +9721,7 @@ img#wpstats {
   width: 2.5em;
   position: relative;
   vertical-align: middle;
+  float: left;
 }
 .widget_advanced_menu .menu > li.current-menu-item li:hover a,
 .widget_advanced_menu .menu > li.current-menu-ancestor li:hover a {
