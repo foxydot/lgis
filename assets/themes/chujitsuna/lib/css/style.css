@@ -9696,11 +9696,11 @@ img#wpstats {
 .widget_advanced_menu .menu > li.current-menu-item li a,
 .widget_advanced_menu .menu > li.current-menu-ancestor li a {
   background-color: #b3b3b3;
-  -webkit-transition: color 1s ease-in-out;
-  -moz-transition: color 1s ease-in-out;
-  -ms-transition: color 1s ease-in-out;
-  -o-transition: color 1s ease-in-out;
-  transition: color 1s ease-in-out;
+  -webkit-transition: background 1s ease-in-out;
+  -moz-transition: background 1s ease-in-out;
+  -ms-transition: background 1s ease-in-out;
+  -o-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
   color: #ffffff;
   display: block;
   text-transform: uppercase;
