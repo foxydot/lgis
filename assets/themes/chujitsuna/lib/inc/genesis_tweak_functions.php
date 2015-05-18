@@ -79,6 +79,21 @@ function msdlab_header_right(){
         ) );
     }
 }
+function msdlab_header_after(){
+    global $wp_registered_sidebars;
+    if( ( isset( $wp_registered_sidebars['post-header'] ) && is_active_sidebar( 'post-header' ) )){
+    genesis_markup( array(
+            'html5'   => '<div class="custom-menu-area"><div class="wrap"><aside %s>',
+            'xhtml'   => '<div class="custom-menu-area"><div class="wrap"><div class="widget-area header-after">',
+            'context' => 'header-widget-area',
+        ) );
+    dynamic_sidebar( 'post-header' );
+    genesis_markup( array(
+            'html5' => '</aside></div></div>',
+            'xhtml' => '</div></div></div>',
+        ) );
+    }
+}
  /**
  * Customize search form input
  */
@@ -137,6 +152,11 @@ function msdlab_add_extra_theme_sidebars(){
     'id' => 'pre-header'
             ));
     genesis_register_sidebar(array(
+    'name' => 'Post-header Sidebar',
+    'description' => 'Widget after header',
+    'id' => 'post-header'
+            ));
+    genesis_register_sidebar(array(
     'name' => 'Page Footer Widget',
     'description' => 'Widget on page footer',
     'id' => 'msdlab_page_footer'
@@ -178,50 +198,35 @@ function msdlab_do_title_area(){
     $postid = is_admin()?$_GET['post']:$post->ID;
     $template_file = get_post_meta($postid,'_wp_page_template',TRUE);
     if ($template_file == 'page-sectioned.php') {
-    } else { 
         print '<div id="page-title-area" class="page-title-area">';
-        print '<div class="wrap">';
         do_action('msdlab_title_area');
         print '</div>';
+    } else { 
+        print '<div id="page-title-area" class="page-title-area">';
+        do_action('msdlab_title_area');
         print '</div>';
     }
 }
 
 function msdlab_do_section_title(){
-    if(is_page()){
+    if(is_front_page()){
+        
+    } elseif(is_page()){
         global $post;
         if(get_section_title()!=$post->post_title){
-            add_action('genesis_before_entry','genesis_do_post_title');
+            add_action('genesis_entry_header','genesis_do_post_title',5);
         }
+        print '<div class="banner clearfix" style="background-image:url('.msdlab_get_thumbnail_url($post->ID,'full').')">';
+        print '<div class="texturize">';
+        print '<div class="gradient">';
+        print '<div class="wrap">';
         print '<h2 class="section-title">';
         print get_section_title();
         print '</h2>';
-    } elseif(is_cpt('project')) {
-        if(is_single()){
-            add_filter('genesis_post_title_text','msdlab_add_portfolio_prefix');
-            genesis_do_post_title();
-            remove_filter('genesis_post_title_text','msdlab_add_portfolio_prefix');
-        } if(is_post_type_archive('project')){
-            print '<h2 class="section-title">';
-            print 'Portfolio';
-            print '</h2>'; 
-        }
-    } elseif(is_cpt('event')) {
-        if(is_single()){
-            genesis_do_post_title();
-        } if(is_post_type_archive('event')){
-            print '<h2 class="section-title">';
-            print 'Events';
-            print '</h2>'; 
-        }
-    } elseif(is_cpt('testimonial')) {
-        if(is_single()){
-            genesis_do_post_title(); //this should never happen
-        } if(is_post_type_archive('testimonial')){
-            print '<h2 class="section-title">';
-            print 'Testimonials';
-            print '</h2>'; 
-        }
+        print '</div>';
+        print '</div>';
+        print '</div>';
+        print '</div>';
     } elseif(is_single()) {
         genesis_do_post_title();
     } else {
