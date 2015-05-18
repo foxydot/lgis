@@ -79,6 +79,21 @@ function msdlab_header_right(){
         ) );
     }
 }
+function msdlab_header_after(){
+    global $wp_registered_sidebars;
+    if( ( isset( $wp_registered_sidebars['post-header'] ) && is_active_sidebar( 'post-header' ) )){
+    genesis_markup( array(
+            'html5'   => '<div class="custom-menu-area"><div class="wrap"><aside %s>',
+            'xhtml'   => '<div class="custom-menu-area"><div class="wrap"><div class="widget-area header-after">',
+            'context' => 'header-widget-area',
+        ) );
+    dynamic_sidebar( 'post-header' );
+    genesis_markup( array(
+            'html5' => '</aside></div></div>',
+            'xhtml' => '</div></div></div>',
+        ) );
+    }
+}
  /**
  * Customize search form input
  */
@@ -135,6 +150,11 @@ function msdlab_add_extra_theme_sidebars(){
     'name' => 'Pre-header Sidebar',
     'description' => 'Widget above the logo/nav header',
     'id' => 'pre-header'
+            ));
+    genesis_register_sidebar(array(
+    'name' => 'Post-header Sidebar',
+    'description' => 'Widget after header',
+    'id' => 'post-header'
             ));
     genesis_register_sidebar(array(
     'name' => 'Page Footer Widget',

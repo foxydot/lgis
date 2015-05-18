@@ -73,3 +73,60 @@ div.gform_wrapper .gform_footer input[type="submit"] {
 img#wpstats {
   display: none;
 }
+
+
+.widget_advanced_menu{
+  .menu{
+    >li{
+      display: none;
+    }
+    >li.current-menu-item,>li.current-menu-ancestor{
+      display:block;
+      >a{
+        display: none;
+      }
+      ul.sub-menu{
+        .make-row();
+      }
+      li{
+          .make-md-column(4);
+          .make-xs-column(12);
+        a{
+          background-color: lighten(@ltgrey,10%);
+          -webkit-transition: all 1s ease-in-out;
+          -moz-transition: all 1s ease-in-out;
+          -ms-transition: all 1s ease-in-out;
+          -o-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
+          color: @white;
+          display: block;
+          text-transform: uppercase;
+          font-size: 22px;
+          font-size: 2.2rem;
+          font-weight: 500;
+          padding: 1em;
+          line-height: 2.5;
+          &:before{
+            content: '';
+            .fontawesome;
+            display: inline-block;
+            margin-right: 1em;
+            border: 2px solid @white;
+            height: 2.5em;
+            width: 2.5em;
+            position: relative;
+            vertical-align: middle;
+          }
+         }
+          &:hover{
+            a{text-decoration: none;
+            background-color: @blue;}
+          }
+      }
+      li.current-menu-item{
+        a{
+        }
+      }
+    }
+  }
+}

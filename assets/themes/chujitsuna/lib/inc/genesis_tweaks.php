@@ -27,6 +27,7 @@ add_filter('genesis_search_button_text', 'msdlab_search_button'); //customize th
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'msdlab_pre_header', 'genesis_do_subnav' );
 add_action('msdlab_pre_header','msdlab_header_right');
+add_action( 'genesis_after_header', 'msdlab_header_after',50 );
 
 /*** NAV ***/
 /**
