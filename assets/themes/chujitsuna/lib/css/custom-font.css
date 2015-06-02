@@ -105,3 +105,10 @@
 .ro-umbrella:before {
   content: "y";
 }
+.entry-content ul.fa-ul li {
+  list-style-type: none;
+}
+.entry-content ul.fa-ul li i {
+  font-size: 1.6em;
+  margin-top: -0.1em;
+}
