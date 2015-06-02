@@ -1,6 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 /* Import Fonts
 ------------------------------------------------------------ */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 /* Font Stacks */
 .customsansserif,
 .customsanserif {
@@ -12,6 +12,9 @@
 }
 .fontawesome {
   font-family: FontAwesome;
+}
+.roicons {
+  font-family: reversed-out-icons;
 }
 /* Colors */
 /* Custom Colors */

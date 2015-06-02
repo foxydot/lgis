@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "adex";
-  src: url("../fonts/adex.eot");
-  src: url("../fonts/adex.eot?#iefix") format("embedded-opentype"), url("../fonts/adex.woff") format("woff"), url("../fonts/adex.ttf") format("truetype"), url("../fonts/adex.svg#adex") format("svg");
+  font-family: "reversed-out-icons";
+  src: url("../fonts/reversed-out-icons.eot");
+  src: url("../fonts/reversed-out-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/reversed-out-icons.woff") format("woff"), url("../fonts/reversed-out-icons.ttf") format("truetype"), url("../fonts/reversed-out-icons.svg#reversed-out-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 [data-icon]:before {
-  font-family: "adex" !important;
+  font-family: "reversed-out-icons" !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
@@ -18,9 +18,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-[class^="adex-"]:before,
-[class*=" adex-"]:before {
-  font-family: "adex" !important;
+[class^="ro-"]:before,
+[class*=" ro-"]:before {
+  font-family: "reversed-out-icons" !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -30,39 +30,78 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.adex-environments:before {
+.ro-boxopen:before {
   content: "a";
 }
-.adex-events:before {
+.ro-lightbulb:before {
   content: "b";
 }
-.adex-exhibits:before {
+.ro-museum:before {
   content: "c";
 }
-.adex-fulfillment:before {
+.ro-newfile:before {
   content: "d";
 }
-.adex-portables:before {
+.ro-people:before {
   content: "e";
 }
-.adex-scrolldown:before {
+.ro-ribbon:before {
   content: "f";
 }
-.adex-webbasedmanagement:before {
+.ro-rocket:before {
   content: "g";
 }
-.adex-design:before {
+.ro-person:before {
   content: "h";
 }
-.adex-fabrication:before {
+.ro-idcard:before {
   content: "i";
 }
-.adex-fulfillment2:before {
+.ro-tag:before {
   content: "j";
 }
-.adex-logistics-facility:before {
+.ro-thumbsup:before {
   content: "k";
 }
-.adex-sales-project-management:before {
+.ro-monitor:before {
   content: "l";
+}
+.ro-scrolldown:before {
+  content: "m";
+}
+.ro-orgtree:before {
+  content: "n";
+}
+.ro-shadowsquare:before {
+  content: "o";
+}
+.ro-truck:before {
+  content: "p";
+}
+.ro-mug:before {
+  content: "q";
+}
+.ro-world:before {
+  content: "r";
+}
+.ro-note:before {
+  content: "s";
+}
+.ro-compass:before {
+  content: "t";
+}
+.ro-exhibits:before {
+  content: "u";
+}
+.ro-calendar:before {
+  content: "v";
+}
+.ro-image:before {
+  content: "w";
+}
+.ro-design:before {
+  content: "x";
+}
+.ro-umbrella:before {
+  content: "y";
 }

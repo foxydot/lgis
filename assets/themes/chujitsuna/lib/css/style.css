@@ -5581,6 +5581,9 @@ td.visible-print {
 .fontawesome {
   font-family: FontAwesome;
 }
+.roicons {
+  font-family: reversed-out-icons;
+}
 /* Colors */
 /* Custom Colors */
 /* Neutrals */
