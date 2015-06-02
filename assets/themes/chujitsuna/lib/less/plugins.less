@@ -108,12 +108,20 @@ img#wpstats {
           line-height: 2.5;
           &:before{
             content: '';
-            .fontawesome;
+            font-family: "reversed-out-icons" !important;
+            font-style: normal !important;
+            font-weight: normal !important;
+            font-variant: normal !important;
+            text-transform: none !important;
+            font-size: 3rem;
+            speak: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
             display: inline-block;
             margin-right: 1em;
             border: 2px solid @white;
-            height: 2.5em;
-            width: 2.5em;
+            padding: 1rem;
             position: relative;
             vertical-align: middle;
             float: left;
@@ -123,6 +131,22 @@ img#wpstats {
             a{text-decoration: none;
             background-color: @blue;}
           }
+          
+      &.thumbsup{
+        a:before{
+          content: 'k';
+        }
+      }
+      &.boxopen{
+        a:before{
+          content: 'a';
+        }
+      }
+      &.newfile{
+        a:before{
+          content: 'd';
+        }
+      }
       }
       li.current-menu-item{
         a{
