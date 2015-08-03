@@ -11696,7 +11696,7 @@ Site Footer
 }
 .home.page .prsnl-bg {
   background: url(../img/prsnl-bg.png) repeat left top;
-  margin-top: 30px;
+  position: relative;
   overflow: hidden;
 }
 .home.page .srvcs {

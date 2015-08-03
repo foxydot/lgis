@@ -6,4 +6,13 @@ jQuery(document).ready(function($) {
     $('#homepage-widgets section.widget').addClass('col-xs-12');
     
     new WOW().init();
+    
+    $('.prsnl-bg').css('top',function(){
+        return '-' + $(this).height() + 'px';
+    }).css('margin-bottom',function(){
+        return '-' + $(this).height() + 'px';
+    });
+    $('#personal-insurance').css('padding-bottom',function(){
+        return $('.prsnl-bg').height() + 'px';
+    });
 });
