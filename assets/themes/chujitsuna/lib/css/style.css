@@ -11392,24 +11392,47 @@ Site Footer
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
-.home.page .section-health-and-wellness {
+.home.page .section-news {
+  background: #f7f7f7;
+  padding-bottom: 60px;
+}
+.home.page .section-health-and-wellness,
+.home.page .section-news {
   width: 100%;
   padding-top: 70px;
   text-align: center;
 }
-.home.page .section-health-and-wellness .section-title {
+.home.page .section-health-and-wellness .section-title,
+.home.page .section-news .section-title {
   background: none !important;
 }
-.home.page .section-health-and-wellness .section-title h3 {
+.home.page .section-health-and-wellness .section-title h3,
+.home.page .section-news .section-title h3 {
   background: url(../img/ttl-bg.png) no-repeat center bottom;
   color: #232323;
 }
-.home.page .section-health-and-wellness .section-title h3 a {
+.home.page .section-health-and-wellness .section-title h3 a,
+.home.page .section-news .section-title h3 a {
   color: #232323;
   text-decoration: none;
 }
-.home.page .section-health-and-wellness .learn-more {
+.home.page .section-health-and-wellness .learn-more,
+.home.page .section-news .learn-more {
   margin-bottom: 55px;
+}
+.home.page .section-header-area {
+  background: url(../img/ttl-bg.png) no-repeat center bottom;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+.home.page .section-footer-area {
+  background: url(../img/ttl-bg.png) no-repeat center top;
+  padding-top: 20px;
+  margin-top: 25px;
+}
+.home.page .section-body div[class^="column-"],
+.home.page .section-body div[class*=" column-"] {
+  text-align: left;
 }
 .home.page .health ul {
   width: 100%;
