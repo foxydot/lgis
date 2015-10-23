@@ -45,6 +45,7 @@ function msdlab_add_scripts() {
         wp_enqueue_script('nav-scripts',get_stylesheet_directory_uri().'/lib/js/nav-scripts.js',array('jquery','bootstrap-jquery'));
         wp_enqueue_script('equalHeights',get_stylesheet_directory_uri().'/lib/js/jquery.equal-height-columns.js',array('jquery'));
         wp_enqueue_script('easing',get_stylesheet_directory_uri().'/lib/js/jquery.easing.min.js',array('jquery'));
+        //wp_enqueue_script('scrollMagic','//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js',array('jquery'));
         wp_enqueue_script('wow',get_stylesheet_directory_uri().'/lib/js/wow.min.js',array('jquery'));
         if($is_IE){
             wp_enqueue_script('columnizr',get_stylesheet_directory_uri().'/lib/js/jquery.columnizer.js',array('jquery'));

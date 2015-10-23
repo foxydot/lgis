@@ -10895,7 +10895,7 @@ Site Footer
 .footer-widgets .connected-social .social-media a.fa-rss:hover {
   background-color: #F37D2A;
 }
-.header-widget-area .widget h4 {
+.site-header .header-widget-area .widget h4 {
   float: left;
   font-size: 12px;
   font-weight: 700;
@@ -10904,20 +10904,20 @@ Site Footer
   letter-spacing: 1px;
   padding-right: 10px;
 }
-.header-widget-area .widget a.lang_sel_sel,
-.header-widget-area .widget a.lang_sel_sel:visited {
+.site-header .header-widget-area .widget a.lang_sel_sel,
+.site-header .header-widget-area .widget a.lang_sel_sel:visited {
   background: url("../img/nav-arrow-down.png") no-repeat scroll right center #006bad;
   color: #ffffff;
   border: 1px solid #006bad;
 }
-.header-widget-area .widget li {
+.site-header .header-widget-area .widget li {
   width: 125px;
 }
-.header-widget-area .widget ul ul {
+.site-header .header-widget-area .widget ul ul {
   width: 125px;
 }
-.header-widget-area .widget ul ul a,
-.header-widget-area .widget ul ul a:visited {
+.site-header .header-widget-area .widget ul ul a,
+.site-header .header-widget-area .widget ul ul a:visited {
   background: #006bad;
   color: #ffffff;
 }
