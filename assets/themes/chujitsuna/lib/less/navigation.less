@@ -139,12 +139,23 @@ Site Navigation
         background-color: @white;
         padding: 0 2rem;
         width: 100%;
+        position: relative;
         a{
           background-color: transparent;
           border: 0;
           color: @dkblue;
           padding: 1rem 0;
           width: 100%;
+        }
+        .sub-menu{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          li.menu-item{
+            a{
+              
+            }
+          }
         }
       }
       li.last-child>a{

@@ -9680,6 +9680,10 @@ img#wpstats {
 .widget_advanced_menu .menu > li.current-menu-ancestor ul.sub-menu:after {
   clear: both;
 }
+.widget_advanced_menu .menu > li.current-menu-item ul.sub-menu ul.sub-menu,
+.widget_advanced_menu .menu > li.current-menu-ancestor ul.sub-menu ul.sub-menu {
+  display: none;
+}
 .widget_advanced_menu .menu > li.current-menu-item li,
 .widget_advanced_menu .menu > li.current-menu-ancestor li {
   position: relative;
@@ -10093,6 +10097,7 @@ Site Navigation
   background-color: #FFF;
   padding: 0 2rem;
   width: 100%;
+  position: relative;
 }
 .nav-primary li.menu-item .sub-menu li.menu-item a {
   background-color: transparent;
@@ -10100,6 +10105,11 @@ Site Navigation
   color: #013D57;
   padding: 1rem 0;
   width: 100%;
+}
+.nav-primary li.menu-item .sub-menu li.menu-item .sub-menu {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .nav-primary li.menu-item .sub-menu li.last-child > a {
   border: 0;
