@@ -26,7 +26,7 @@
 .button a,
 .button a:hover,
 .button a:visited {
-  background-color: #532a44;
+  background-color: #b1be36;
   border-radius: 0;
   padding: 6px 24px;
   font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
@@ -39,9 +39,9 @@
   font-weight: normal;
   text-transform: uppercase;
   display: table;
-  margin: 12px auto;
+  margin: 12px 0 24px;
   text-decoration: none;
-  background-color: #311928;
+  background-color: #8c962b;
 }
 /* Clears */
 .msd-clearfix {
