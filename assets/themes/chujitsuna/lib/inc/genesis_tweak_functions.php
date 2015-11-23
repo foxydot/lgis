@@ -215,14 +215,17 @@ function msdlab_do_section_title(){
         global $post;
         if(get_section_title()!=$post->post_title){
             add_action('genesis_entry_header','genesis_do_post_title',5);
+            $weight = 'h2';
+        } else {
+            $weight = 'h1';
         }
         print '<div class="banner clearfix" style="background-image:url('.msdlab_get_thumbnail_url($post->ID,'full').')">';
         print '<div class="texturize">';
         print '<div class="gradient">';
         print '<div class="wrap">';
-        print '<h2 class="section-title">';
+        print '<'.$weight.' class="section-title">';
         print get_section_title();
-        print '</h2>';
+        print '</'.$weight.'>';
         print '</div>';
         print '</div>';
         print '</div>';
@@ -684,5 +687,15 @@ if(!function_exists('msdlab_custom_hooks_management')){
         }
         if($actions !=''){ts_data($actions);}
         if(get_option('site_lockout')){print '<div style="width: 100%; position: fixed; top: 0; z-index: 100000; background-color: red; padding: 12px; color: white; font-weight: bold; font-size: 24px;text-align: center;">'.get_option('site_lockout').'</div>';}
+    }
+}
+
+function msdlab_fonts_for_exploder() {
+    global $is_IE;
+    if(!is_admin()){
+        if($is_IE){
+            print "<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>";
+            print "<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>";
+        }    
     }
 }

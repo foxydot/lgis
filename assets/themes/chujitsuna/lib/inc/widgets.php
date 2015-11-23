@@ -5,6 +5,7 @@
 if(class_exists('MSDConnected')){
 class KohlerConnected extends MSDConnected {
     function widget( $args, $instance ) {
+        global $msd_social;
         extract($args);
         extract($instance);
         $title = apply_filters( 'widget_title', empty($instance['title']) ? '' : $instance['title'], $instance );
@@ -83,6 +84,29 @@ class KohlerConnected extends MSDConnected {
             $email = (get_option('msdsocial_email')!='')?'Email: <span itemprop="email"><a href="mailto:'.antispambot(get_option('msdsocial_email')).'">'.antispambot(get_option('msdsocial_email')).'</a></span> ':'';
             if ( $email ){ print '<div class="connected-email">'.$email.'</div>'; }
         }
+        if ( $additional_locations ){
+            $additional_locations = get_option(msdsocial_adtl_locations);
+            $ret = false;
+            $i = 0;
+            foreach($additional_locations AS $loc){
+                if(($loc[location_name]!='') || ($loc[street]!='') || ($loc[city]!='') || ($loc[state]!='') || ($loc[zip]!='')) {
+                    $i++;
+                    $ret .= '<address itemscope itemtype="http://schema.org/LocalBusiness" class="additional-location location-'.$i.'">';
+                        $ret .= ($loc[location_name]!='')?'<span itemprop="name" class="msdsocial_location_name">'.$loc[location_name].'</span> ':'';
+                        $ret .= ($loc[street]!='')?'<span itemprop="streetAddress" class="msdsocial_street">'.$loc[street].'</span> ':'';
+                        $ret .= ($loc[street2]!='')?'<span itemprop="streetAddress" class="msdsocial_street_2">'.$loc[street2].'</span> ':'';
+                        $ret .= ($loc[city]!='')?'<span itemprop="addressLocality" class="msdsocial_city">'.$loc[city].'</span>, ':'';
+                        $ret .= ($loc[state]!='')?'<span itemprop="addressRegion" class="msdsocial_state">'.$loc[state].'</span> ':'';
+                        $ret .= ($loc[zip]!='')?'<span itemprop="postalCode" class="msdsocial_zip">'.$loc[zip].'</span> ':'';
+                        $ret .= $msd_social->get_location_digits($loc,FALSE,'');
+                    $ret .= '</address>';
+                }
+            }
+            if ( $ret ){
+                print '<div class="connected-additional-locations">'.$ret.'</div>';
+            }
+        }
+        
         if ( $social ){
             $social = do_shortcode('[msd-social]');
             if( $social ){ print '<div class="connected-social">'.$social.'</div>'; }

@@ -17,6 +17,7 @@ add_theme_support( 'genesis-structural-wraps', array(
 
 /*** HEADER ***/
 add_action('wp_head','msdlab_add_apple_touch_icons');
+add_action('wp_head','msdlab_fonts_for_exploder');
 add_filter( 'genesis_search_text', 'msdlab_search_text' ); //customizes the serach bar placeholder
 add_filter('genesis_search_button_text', 'msdlab_search_button'); //customize the search form to add fontawesome search button.
 //add_action('genesis_before_header','msdlab_pre_header');

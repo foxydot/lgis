@@ -10838,6 +10838,9 @@ Site Footer
 .footer-widgets .connected-address span.msdsocial_street {
   display: block;
 }
+.footer-widgets .connected-additional-locations .additional-location span {
+  display: block;
+}
 .footer-widgets .connected-social .social-media {
   float: right;
 }
@@ -10972,7 +10975,6 @@ Site Footer
   width: 33.33%;
   float: left;
   text-align: center;
-  cursor: pointer;
   list-style: none;
 }
 .home.page .section-why-loyalty-group ul li:hover .icn1 {
@@ -11051,6 +11053,9 @@ Site Footer
   width: 122px;
   height: 142px;
   margin: 0 auto;
+}
+.home.page .icn a {
+  display: block;
 }
 .home.page .icn1 {
   background-image: url(../img/w1.png);
@@ -11234,7 +11239,6 @@ Site Footer
   width: 32%;
   float: left;
   text-align: center;
-  cursor: pointer;
   padding-top: 30px;
   list-style: none;
 }
@@ -11242,6 +11246,9 @@ Site Footer
   width: 122px;
   height: 122px;
   margin: 0 auto;
+}
+.home.page .commercial-data ul li .cmin a {
+  display: block;
 }
 .home.page .commercial-data ul li .cmin-1 {
   background-image: url(../img/cmrcl-1.png);
@@ -11507,7 +11514,9 @@ Site Footer
 .home.page .hlth_icn {
   background: #dfdcdc;
   min-height: 190px;
-  cursor: pointer;
+}
+.home.page .hlth_icn a {
+  display: block;
 }
 .home.page .hlth1 {
   background: url(../img/hlth1.png) no-repeat center center;
@@ -11576,7 +11585,6 @@ Site Footer
   margin-right: 1.5%;
   text-align: center;
   margin-bottom: 40px;
-  cursor: pointer;
   list-style: none;
 }
 .home.page #personal-insurance ul li:hover .prsnl1 {
@@ -11624,6 +11632,9 @@ Site Footer
   width: 122px;
   height: 110px;
   margin: 0 auto;
+}
+.home.page .prsnl-icn a {
+  display: block;
 }
 .home.page .prsnl1 {
   background-image: url(../img/p1.png);
