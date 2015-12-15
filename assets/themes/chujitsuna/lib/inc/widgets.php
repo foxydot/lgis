@@ -89,14 +89,14 @@ class KohlerConnected extends MSDConnected {
             $ret = false;
             $i = 0;
             foreach($additional_locations AS $loc){
-                if(($loc[location_name]!='') || ($loc[street]!='') || ($loc[city]!='') || ($loc[state]!='') || ($loc[zip]!='')) {
+                if(($loc[location_name]!='') || ($loc[street]!='') || ($loc[city]!='') || ($loc[state]!='' && $loc[state]!='Select') || ($loc[zip]!='')) {
                     $i++;
                     $ret .= '<address itemscope itemtype="http://schema.org/LocalBusiness" class="additional-location location-'.$i.'">';
                         $ret .= ($loc[location_name]!='')?'<span itemprop="name" class="msdsocial_location_name">'.$loc[location_name].'</span> ':'';
                         $ret .= ($loc[street]!='')?'<span itemprop="streetAddress" class="msdsocial_street">'.$loc[street].'</span> ':'';
                         $ret .= ($loc[street2]!='')?'<span itemprop="streetAddress" class="msdsocial_street_2">'.$loc[street2].'</span> ':'';
                         $ret .= ($loc[city]!='')?'<span itemprop="addressLocality" class="msdsocial_city">'.$loc[city].'</span>, ':'';
-                        $ret .= ($loc[state]!='')?'<span itemprop="addressRegion" class="msdsocial_state">'.$loc[state].'</span> ':'';
+                        $ret .= ($loc[state]!='' && $loc[state]!='Select')?'<span itemprop="addressRegion" class="msdsocial_state">'.$loc[state].'</span> ':'';
                         $ret .= ($loc[zip]!='')?'<span itemprop="postalCode" class="msdsocial_zip">'.$loc[zip].'</span> ':'';
                         $ret .= $msd_social->get_location_digits($loc,FALSE,'');
                     $ret .= '</address>';
@@ -105,6 +105,12 @@ class KohlerConnected extends MSDConnected {
             if ( $ret ){
                 print '<div class="connected-additional-locations">'.$ret.'</div>';
             }
+        }
+        if($msd_social->get_hours() != ''){
+            print '<div class="connected-hours">
+            <h6>Hours</h6>';
+            print $msd_social->get_hours();
+            print '</div>';
         }
         
         if ( $social ){
