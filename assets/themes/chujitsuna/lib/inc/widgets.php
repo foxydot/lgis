@@ -99,6 +99,7 @@ class KohlerConnected extends MSDConnected {
                         $ret .= ($loc[state]!='' && $loc[state]!='Select')?'<span itemprop="addressRegion" class="msdsocial_state">'.$loc[state].'</span> ':'';
                         $ret .= ($loc[zip]!='')?'<span itemprop="postalCode" class="msdsocial_zip">'.$loc[zip].'</span> ':'';
                         $ret .= $msd_social->get_location_digits($loc,FALSE,'');
+                        $ret .= ($loc[email]!='')?'<div class="connected-email"><span itemprop="email">Email: <a href="mailto:'.antispambot($loc[email]).'">'.antispambot($loc[email]).'</a></span></div> ':'';
                     $ret .= '</address>';
                 }
             }
