@@ -1,0 +1,69 @@
+/* Import Fonts
+------------------------------------------------------------ */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+/* Font Stacks */
+.customsansserif,
+.customsanserif {
+  font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.625;
+}
+.fontawesome {
+  font-family: FontAwesome;
+}
+.roicons {
+  font-family: reversed-out-icons;
+}
+/* Colors */
+/* Custom Colors */
+/* Neutrals */
+/* Gradients */
+/* Buttons */
+.button:hover,
+.button:visited,
+.button a,
+.button a:hover,
+.button a:visited {
+  background-color: #b1be36;
+  border-radius: 0;
+  padding: 6px 24px;
+  font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.625;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: table;
+  margin: 12px 0 24px;
+  text-decoration: none;
+  background-color: #8c962b;
+}
+/* Clears */
+.msd-clearfix {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.entry-content h3 {
+  color: #FFF;
+  background-color: #013D57;
+  padding: 0.5rem;
+}
+.entry-content h4 {
+  color: #FFF;
+  background-color: #013D57;
+  padding: 0.5rem;
+}
+.entry-content h5 {
+  color: #0096D6;
+}
+.entry-content strong {
+  color: #0096D6;
+}

@@ -6,7 +6,7 @@ add_action('wp_enqueue_scripts', 'msdlab_add_styles');
 add_action('wp_enqueue_scripts', 'msdlab_add_scripts');
 
 function msdlab_add_styles() {
-    global $is_IE;
+    global $is_IE,$section;
     if(!is_admin()){
         //use cdn        
             wp_enqueue_style('bootstrap-style','//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css');
@@ -22,6 +22,10 @@ function msdlab_add_styles() {
         if(is_front_page() || is_page('japanese') || is_page('jp')){
             wp_enqueue_style('msd-homepage-style',get_stylesheet_directory_uri().'/lib/css/homepage.css',$queue);
             $queue[] = 'msd-homepage-style';
+        }    
+        if($section == 'japanese' || $section == 'jp'){
+            wp_enqueue_style('msd-jp-style',get_stylesheet_directory_uri().'/lib/css/jp.css',$queue);
+            $queue[] = 'msd-jp-style';
         }    
         if($is_IE){
             wp_enqueue_style('ie-style',get_stylesheet_directory_uri().'/lib/css/ie.css',$queue);
