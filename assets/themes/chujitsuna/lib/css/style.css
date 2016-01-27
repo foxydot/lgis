@@ -11226,14 +11226,23 @@ Site Footer
   background: #006bad;
   color: #ffffff;
 }
-.home.page .section-why-loyalty-group {
+.home.page .page-title-area,
+.japanese.page .page-title-area,
+.jp.page .page-title-area {
+  display: none;
+}
+.home.page .section-why-loyalty-group,
+.japanese.page .section-why-loyalty-group,
+.jp.page .section-why-loyalty-group {
   width: 670px;
   margin: 80px auto 50px;
   text-align: center;
   overflow: hidden;
   font-family: 'Open Sans', sans-serif;
 }
-.home.page .section-why-loyalty-group .section-title h3 {
+.home.page .section-why-loyalty-group .section-title h3,
+.japanese.page .section-why-loyalty-group .section-title h3,
+.jp.page .section-why-loyalty-group .section-title h3 {
   background: url(../img/ttl-bg.png) no-repeat center bottom;
   padding-bottom: 20px;
   margin-bottom: 25px;
@@ -11242,11 +11251,15 @@ Site Footer
   color: #232323;
   text-transform: uppercase;
 }
-.home.page .section-why-loyalty-group .section-title h3 a {
+.home.page .section-why-loyalty-group .section-title h3 a,
+.japanese.page .section-why-loyalty-group .section-title h3 a,
+.jp.page .section-why-loyalty-group .section-title h3 a {
   color: #232323;
   text-decoration: none;
 }
-.home.page .section-why-loyalty-group p {
+.home.page .section-why-loyalty-group p,
+.japanese.page .section-why-loyalty-group p,
+.jp.page .section-why-loyalty-group p {
   font-size: 16px;
   font-weight: 400;
   color: #5f5f5f;
@@ -11254,7 +11267,9 @@ Site Footer
   width: 80%;
   margin: 0 auto;
 }
-.home.page .section-why-loyalty-group h4 {
+.home.page .section-why-loyalty-group h4,
+.japanese.page .section-why-loyalty-group h4,
+.jp.page .section-why-loyalty-group h4 {
   font-size: 20px;
   font-weight: 600;
   color: #5f5f5f;
@@ -11262,16 +11277,22 @@ Site Footer
   text-transform: uppercase;
   margin-top: 20px;
 }
-.home.page .section-why-loyalty-group ul {
+.home.page .section-why-loyalty-group ul,
+.japanese.page .section-why-loyalty-group ul,
+.jp.page .section-why-loyalty-group ul {
   width: 100%;
 }
-.home.page .section-why-loyalty-group ul li {
+.home.page .section-why-loyalty-group ul li,
+.japanese.page .section-why-loyalty-group ul li,
+.jp.page .section-why-loyalty-group ul li {
   width: 33.33%;
   float: left;
   text-align: center;
   list-style: none;
 }
-.home.page .section-why-loyalty-group ul li:hover .icn1 {
+.home.page .section-why-loyalty-group ul li:hover .icn1,
+.japanese.page .section-why-loyalty-group ul li:hover .icn1,
+.jp.page .section-why-loyalty-group ul li:hover .icn1 {
   background-image: url(../img/w1-hvr.png);
   height: 136px;
   background-repeat: no-repeat;
@@ -11282,7 +11303,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .section-why-loyalty-group ul li:hover .icn2 {
+.home.page .section-why-loyalty-group ul li:hover .icn2,
+.japanese.page .section-why-loyalty-group ul li:hover .icn2,
+.jp.page .section-why-loyalty-group ul li:hover .icn2 {
   background-image: url(../img/w2-hvr.png);
   height: 136px;
   background-repeat: no-repeat;
@@ -11293,7 +11316,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .section-why-loyalty-group ul li:hover .icn3 {
+.home.page .section-why-loyalty-group ul li:hover .icn3,
+.japanese.page .section-why-loyalty-group ul li:hover .icn3,
+.jp.page .section-why-loyalty-group ul li:hover .icn3 {
   background-image: url(../img/w3-hvr.png);
   height: 136px;
   background-repeat: no-repeat;
@@ -11304,7 +11329,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .section-why-loyalty-group ul li:hover .icn4 {
+.home.page .section-why-loyalty-group ul li:hover .icn4,
+.japanese.page .section-why-loyalty-group ul li:hover .icn4,
+.jp.page .section-why-loyalty-group ul li:hover .icn4 {
   background-image: url(../img/w4-hvr.png);
   height: 136px;
   background-repeat: no-repeat;
@@ -11315,7 +11342,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .section-why-loyalty-group ul li:hover .icn5 {
+.home.page .section-why-loyalty-group ul li:hover .icn5,
+.japanese.page .section-why-loyalty-group ul li:hover .icn5,
+.jp.page .section-why-loyalty-group ul li:hover .icn5 {
   background-image: url(../img/w5-hvr.png);
   height: 136px;
   background-repeat: no-repeat;
@@ -11326,7 +11355,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .section-why-loyalty-group ul li:hover .icn6 {
+.home.page .section-why-loyalty-group ul li:hover .icn6,
+.japanese.page .section-why-loyalty-group ul li:hover .icn6,
+.jp.page .section-why-loyalty-group ul li:hover .icn6 {
   background-image: url(../img/w6-hvr.png);
   height: 136px;
   background-repeat: no-repeat;
@@ -11337,21 +11368,31 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .section-why-loyalty-group ul li:hover .title {
+.home.page .section-why-loyalty-group ul li:hover .title,
+.japanese.page .section-why-loyalty-group ul li:hover .title,
+.jp.page .section-why-loyalty-group ul li:hover .title {
   color: #0096d6;
 }
-.home.page .section-why-loyalty-group .section-title {
+.home.page .section-why-loyalty-group .section-title,
+.japanese.page .section-why-loyalty-group .section-title,
+.jp.page .section-why-loyalty-group .section-title {
   background: none !important;
 }
-.home.page .icn {
+.home.page .icn,
+.japanese.page .icn,
+.jp.page .icn {
   width: 122px;
   height: 142px;
   margin: 0 auto;
 }
-.home.page .icn span {
+.home.page .icn span,
+.japanese.page .icn span,
+.jp.page .icn span {
   display: block;
 }
-.home.page .icn1 {
+.home.page .icn1,
+.japanese.page .icn1,
+.jp.page .icn1 {
   background-image: url(../img/w1.png);
   background-repeat: no-repeat;
   background-position: center 10px;
@@ -11362,7 +11403,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .icn1:hover {
+.home.page .icn1:hover,
+.japanese.page .icn1:hover,
+.jp.page .icn1:hover {
   width: 122px;
   background-image: url(../img/w1-hvr.png);
   background-repeat: no-repeat;
@@ -11374,7 +11417,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .icn2 {
+.home.page .icn2,
+.japanese.page .icn2,
+.jp.page .icn2 {
   background-image: url(../img/w2.png);
   background-repeat: no-repeat;
   background-position: center 10px;
@@ -11385,7 +11430,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .icn2:hover {
+.home.page .icn2:hover,
+.japanese.page .icn2:hover,
+.jp.page .icn2:hover {
   width: 122px;
   background-image: url(../img/w2-hvr.png);
   background-repeat: no-repeat;
@@ -11397,7 +11444,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .icn3 {
+.home.page .icn3,
+.japanese.page .icn3,
+.jp.page .icn3 {
   background-image: url(../img/w3.png);
   background-repeat: no-repeat;
   background-position: center 10px;
@@ -11408,7 +11457,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .icn3:hover {
+.home.page .icn3:hover,
+.japanese.page .icn3:hover,
+.jp.page .icn3:hover {
   width: 122px;
   background-image: url(../img/w3-hvr.png);
   background-repeat: no-repeat;
@@ -11420,7 +11471,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .icn4 {
+.home.page .icn4,
+.japanese.page .icn4,
+.jp.page .icn4 {
   background-image: url(../img/w4.png);
   background-repeat: no-repeat;
   background-position: center 10px;
@@ -11431,7 +11484,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .icn4:hover {
+.home.page .icn4:hover,
+.japanese.page .icn4:hover,
+.jp.page .icn4:hover {
   width: 122px;
   background-image: url(../img/w4-hvr.png);
   background-repeat: no-repeat;
@@ -11443,7 +11498,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .icn5 {
+.home.page .icn5,
+.japanese.page .icn5,
+.jp.page .icn5 {
   background-image: url(../img/w5.png);
   background-repeat: no-repeat;
   background-position: center 10px;
@@ -11454,7 +11511,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .icn5:hover {
+.home.page .icn5:hover,
+.japanese.page .icn5:hover,
+.jp.page .icn5:hover {
   width: 122px;
   background-image: url(../img/w5-hvr.png);
   background-repeat: no-repeat;
@@ -11466,7 +11525,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .icn6 {
+.home.page .icn6,
+.japanese.page .icn6,
+.jp.page .icn6 {
   background-image: url(../img/w6.png);
   background-repeat: no-repeat;
   background-position: center 10px;
@@ -11477,7 +11538,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .icn6:hover {
+.home.page .icn6:hover,
+.japanese.page .icn6:hover,
+.jp.page .icn6:hover {
   width: 122px;
   background-image: url(../img/w6-hvr.png);
   background-repeat: no-repeat;
@@ -11489,7 +11552,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .title {
+.home.page .title,
+.japanese.page .title,
+.jp.page .title {
   font-size: 15px;
   color: #373737;
   font-weight: 400;
@@ -11499,7 +11564,9 @@ Site Footer
   min-height: 60px;
   line-height: 20px;
 }
-.home.page .section-commercial-insurance {
+.home.page .section-commercial-insurance,
+.japanese.page .section-commercial-insurance,
+.jp.page .section-commercial-insurance {
   width: 100%;
   background: url(../img/commercial.png) 50% 0 no-repeat fixed;
   min-height: 507px;
@@ -11509,42 +11576,60 @@ Site Footer
   position: relative;
   height: auto;
 }
-.home.page .section-commercial-insurance .section-title h3 {
+.home.page .section-commercial-insurance .section-title h3,
+.japanese.page .section-commercial-insurance .section-title h3,
+.jp.page .section-commercial-insurance .section-title h3 {
   background: url(../img/ttl-bg-wht.png) no-repeat center bottom;
   color: #ffffff;
 }
-.home.page .section-commercial-insurance .section-title h3 a {
+.home.page .section-commercial-insurance .section-title h3 a,
+.japanese.page .section-commercial-insurance .section-title h3 a,
+.jp.page .section-commercial-insurance .section-title h3 a {
   color: #ffffff;
   text-decoration: none;
 }
-.home.page .section-commercial-insurance .section-title {
+.home.page .section-commercial-insurance .section-title,
+.japanese.page .section-commercial-insurance .section-title,
+.jp.page .section-commercial-insurance .section-title {
   background: none !important;
 }
-.home.page .commercial-data {
+.home.page .commercial-data,
+.japanese.page .commercial-data,
+.jp.page .commercial-data {
   width: 60%;
   margin: 10px auto 0;
 }
-.home.page .commercial-data ul {
+.home.page .commercial-data ul,
+.japanese.page .commercial-data ul,
+.jp.page .commercial-data ul {
   width: 100%;
   margin-bottom: 70px;
   overflow: hidden;
 }
-.home.page .commercial-data ul li {
+.home.page .commercial-data ul li,
+.japanese.page .commercial-data ul li,
+.jp.page .commercial-data ul li {
   width: 32%;
   float: left;
   text-align: center;
   padding-top: 30px;
   list-style: none;
 }
-.home.page .commercial-data ul li .cmin {
+.home.page .commercial-data ul li .cmin,
+.japanese.page .commercial-data ul li .cmin,
+.jp.page .commercial-data ul li .cmin {
   width: 122px;
   height: 122px;
   margin: 0 auto;
 }
-.home.page .commercial-data ul li .cmin a {
+.home.page .commercial-data ul li .cmin a,
+.japanese.page .commercial-data ul li .cmin a,
+.jp.page .commercial-data ul li .cmin a {
   display: block;
 }
-.home.page .commercial-data ul li .cmin-1 {
+.home.page .commercial-data ul li .cmin-1,
+.japanese.page .commercial-data ul li .cmin-1,
+.jp.page .commercial-data ul li .cmin-1 {
   background-image: url(../img/cmrcl-1.png);
   background-repeat: no-repeat;
   background-position: center 10px;
@@ -11555,7 +11640,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .commercial-data ul li .cmin-1:hover {
+.home.page .commercial-data ul li .cmin-1:hover,
+.japanese.page .commercial-data ul li .cmin-1:hover,
+.jp.page .commercial-data ul li .cmin-1:hover {
   width: 122px;
   background-image: url(../img/cmrcl-1-hvr.png);
   background-repeat: no-repeat;
@@ -11567,7 +11654,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .commercial-data ul li .cmin-2 {
+.home.page .commercial-data ul li .cmin-2,
+.japanese.page .commercial-data ul li .cmin-2,
+.jp.page .commercial-data ul li .cmin-2 {
   background-image: url(../img/cmrcl-2.png);
   background-repeat: no-repeat;
   background-position: center 10px;
@@ -11578,7 +11667,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .commercial-data ul li .cmin-2:hover {
+.home.page .commercial-data ul li .cmin-2:hover,
+.japanese.page .commercial-data ul li .cmin-2:hover,
+.jp.page .commercial-data ul li .cmin-2:hover {
   width: 122px;
   background-image: url(../img/cmrcl-2-hvr.png);
   background-repeat: no-repeat;
@@ -11590,7 +11681,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .commercial-data ul li .cmin-3 {
+.home.page .commercial-data ul li .cmin-3,
+.japanese.page .commercial-data ul li .cmin-3,
+.jp.page .commercial-data ul li .cmin-3 {
   background-image: url(../img/cmrcl-3.png);
   background-repeat: no-repeat;
   background-position: center 10px;
@@ -11601,7 +11694,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .commercial-data ul li .cmin-3:hover {
+.home.page .commercial-data ul li .cmin-3:hover,
+.japanese.page .commercial-data ul li .cmin-3:hover,
+.jp.page .commercial-data ul li .cmin-3:hover {
   width: 122px;
   background-image: url(../img/cmrcl-3-hvr.png);
   background-repeat: no-repeat;
@@ -11613,7 +11708,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .commercial-data ul li h4 {
+.home.page .commercial-data ul li h4,
+.japanese.page .commercial-data ul li h4,
+.jp.page .commercial-data ul li h4 {
   font-size: 22px;
   font-weight: 700;
   color: #ffffff;
@@ -11621,11 +11718,15 @@ Site Footer
   line-height: 28px;
   margin-top: 10px;
 }
-.home.page .commercial-data ul li h4 a {
+.home.page .commercial-data ul li h4 a,
+.japanese.page .commercial-data ul li h4 a,
+.jp.page .commercial-data ul li h4 a {
   color: #ffffff;
   text-decoration: none;
 }
-.home.page .commercial-data ul li:hover h4 a {
+.home.page .commercial-data ul li:hover h4 a,
+.japanese.page .commercial-data ul li:hover h4 a,
+.jp.page .commercial-data ul li:hover h4 a {
   color: #013d57;
   -webkit-transition: background 0.5s ease-in;
   -moz-transition: background 0.5s ease-in;
@@ -11633,7 +11734,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .commercial-data ul li:hover .cmin-1 {
+.home.page .commercial-data ul li:hover .cmin-1,
+.japanese.page .commercial-data ul li:hover .cmin-1,
+.jp.page .commercial-data ul li:hover .cmin-1 {
   background-image: url(../img/cmrcl-1-hvr.png);
   height: 136px;
   background-repeat: no-repeat;
@@ -11644,7 +11747,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .commercial-data ul li:hover .cmin-2 {
+.home.page .commercial-data ul li:hover .cmin-2,
+.japanese.page .commercial-data ul li:hover .cmin-2,
+.jp.page .commercial-data ul li:hover .cmin-2 {
   background-image: url(../img/cmrcl-2-hvr.png);
   height: 136px;
   background-repeat: no-repeat;
@@ -11655,7 +11760,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .commercial-data ul li:hover .cmin-3 {
+.home.page .commercial-data ul li:hover .cmin-3,
+.japanese.page .commercial-data ul li:hover .cmin-3,
+.jp.page .commercial-data ul li:hover .cmin-3 {
   background-image: url(../img/cmrcl-3-hvr.png);
   height: 136px;
   background-repeat: no-repeat;
@@ -11666,7 +11773,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .cmrcl-ttl {
+.home.page .cmrcl-ttl,
+.japanese.page .cmrcl-ttl,
+.jp.page .cmrcl-ttl {
   width: 62%;
   float: left;
   margin-left: 6%;
@@ -11677,12 +11786,16 @@ Site Footer
   padding-top: 15px;
   line-height: 28px;
 }
-.home.page .learn-more {
+.home.page .learn-more,
+.japanese.page .learn-more,
+.jp.page .learn-more {
   width: 100%;
   clear: both;
   margin-bottom: 80px;
 }
-.home.page .learn-more a {
+.home.page .learn-more a,
+.japanese.page .learn-more a,
+.jp.page .learn-more a {
   background: #b1be36 url(../img/arw.png) no-repeat right center;
   padding: 10px 50px 10px 25px;
   color: #ffffff;
@@ -11691,7 +11804,11 @@ Site Footer
   border: 3px solid #ffffff;
 }
 .home.page .learn-more a:hover,
-.home.page .learn-more a:focus {
+.japanese.page .learn-more a:hover,
+.jp.page .learn-more a:hover,
+.home.page .learn-more a:focus,
+.japanese.page .learn-more a:focus,
+.jp.page .learn-more a:focus {
   color: #ffffff;
   text-decoration: none;
   background: #013d57 url(../img/arw.png) no-repeat right center;
@@ -11701,62 +11818,100 @@ Site Footer
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
-.home.page .section-news {
+.home.page .section-news,
+.japanese.page .section-news,
+.jp.page .section-news {
   background: #f7f7f7;
   padding-bottom: 60px;
 }
 .home.page .section-health-and-wellness,
-.home.page .section-news {
+.japanese.page .section-health-and-wellness,
+.jp.page .section-health-and-wellness,
+.home.page .section-news,
+.japanese.page .section-news,
+.jp.page .section-news {
   width: 100%;
   padding-top: 70px;
   text-align: center;
 }
 .home.page .section-health-and-wellness .section-title,
-.home.page .section-news .section-title {
+.japanese.page .section-health-and-wellness .section-title,
+.jp.page .section-health-and-wellness .section-title,
+.home.page .section-news .section-title,
+.japanese.page .section-news .section-title,
+.jp.page .section-news .section-title {
   background: none !important;
 }
 .home.page .section-health-and-wellness .section-title h3,
-.home.page .section-news .section-title h3 {
+.japanese.page .section-health-and-wellness .section-title h3,
+.jp.page .section-health-and-wellness .section-title h3,
+.home.page .section-news .section-title h3,
+.japanese.page .section-news .section-title h3,
+.jp.page .section-news .section-title h3 {
   background: url(../img/ttl-bg.png) no-repeat center bottom;
   color: #232323;
 }
 .home.page .section-health-and-wellness .section-title h3 a,
-.home.page .section-news .section-title h3 a {
+.japanese.page .section-health-and-wellness .section-title h3 a,
+.jp.page .section-health-and-wellness .section-title h3 a,
+.home.page .section-news .section-title h3 a,
+.japanese.page .section-news .section-title h3 a,
+.jp.page .section-news .section-title h3 a {
   color: #232323;
   text-decoration: none;
 }
 .home.page .section-health-and-wellness .learn-more,
-.home.page .section-news .learn-more {
+.japanese.page .section-health-and-wellness .learn-more,
+.jp.page .section-health-and-wellness .learn-more,
+.home.page .section-news .learn-more,
+.japanese.page .section-news .learn-more,
+.jp.page .section-news .learn-more {
   margin-bottom: 55px;
 }
-.home.page .section-header-area {
+.home.page .section-header-area,
+.japanese.page .section-header-area,
+.jp.page .section-header-area {
   background: url(../img/ttl-bg.png) no-repeat center bottom;
   padding-bottom: 20px;
   margin-bottom: 25px;
 }
-.home.page .section-footer-area {
+.home.page .section-footer-area,
+.japanese.page .section-footer-area,
+.jp.page .section-footer-area {
   background: url(../img/ttl-bg.png) no-repeat center top;
   padding-top: 20px;
   margin-top: 25px;
 }
 .home.page .section-body div[class^="column-"],
-.home.page .section-body div[class*=" column-"] {
+.japanese.page .section-body div[class^="column-"],
+.jp.page .section-body div[class^="column-"],
+.home.page .section-body div[class*=" column-"],
+.japanese.page .section-body div[class*=" column-"],
+.jp.page .section-body div[class*=" column-"] {
   text-align: left;
 }
-.home.page .health ul {
+.home.page .health ul,
+.japanese.page .health ul,
+.jp.page .health ul {
   width: 100%;
 }
-.home.page .health ul li {
+.home.page .health ul li,
+.japanese.page .health ul li,
+.jp.page .health ul li {
   width: 32%;
   float: left;
   margin-right: 2%;
   margin-bottom: 55px;
   list-style: none;
 }
-.home.page .health ul li.last {
+.home.page .health ul li.last,
+.japanese.page .health ul li.last,
+.jp.page .health ul li.last {
   margin-right: 0;
 }
-.home.page .health ul li:hover .hlth_icn {
+.home.page .health ul li:hover .hlth_icn,
+.japanese.page .health ul li:hover .hlth_icn,
+.jp.page .health ul li:hover .hlth_icn {
   background: #00b3ff;
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
@@ -11764,7 +11919,9 @@ Site Footer
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
-.home.page .health ul li:hover .hlth1 {
+.home.page .health ul li:hover .hlth1,
+.japanese.page .health ul li:hover .hlth1,
+.jp.page .health ul li:hover .hlth1 {
   background: url(../img/hlth1-hvr.png) no-repeat center center;
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
@@ -11772,7 +11929,9 @@ Site Footer
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
-.home.page .health ul li:hover .hlth2 {
+.home.page .health ul li:hover .hlth2,
+.japanese.page .health ul li:hover .hlth2,
+.jp.page .health ul li:hover .hlth2 {
   background: url(../img/analysis-hvr.png) no-repeat center center;
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
@@ -11780,7 +11939,9 @@ Site Footer
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
-.home.page .health ul li:hover .hlth3 {
+.home.page .health ul li:hover .hlth3,
+.japanese.page .health ul li:hover .hlth3,
+.jp.page .health ul li:hover .hlth3 {
   background: url(../img/plan-hvr.png) no-repeat center center;
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
@@ -11788,7 +11949,9 @@ Site Footer
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
-.home.page .health ul li:hover .hlth_ttl {
+.home.page .health ul li:hover .hlth_ttl,
+.japanese.page .health ul li:hover .hlth_ttl,
+.jp.page .health ul li:hover .hlth_ttl {
   background: #0096d6;
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
@@ -11796,7 +11959,9 @@ Site Footer
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
-.home.page .health ul li:hover .hlth_ttl a {
+.home.page .health ul li:hover .hlth_ttl a,
+.japanese.page .health ul li:hover .hlth_ttl a,
+.jp.page .health ul li:hover .hlth_ttl a {
   color: #ffffff;
   text-decoration: none;
   -webkit-transition: all 0.5s ease-in;
@@ -11805,32 +11970,44 @@ Site Footer
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
-.home.page .hlth_icn {
+.home.page .hlth_icn,
+.japanese.page .hlth_icn,
+.jp.page .hlth_icn {
   background: #dfdcdc;
   min-height: 190px;
 }
-.home.page .hlth_icn a {
+.home.page .hlth_icn a,
+.japanese.page .hlth_icn a,
+.jp.page .hlth_icn a {
   display: block;
 }
-.home.page .hlth1 {
+.home.page .hlth1,
+.japanese.page .hlth1,
+.jp.page .hlth1 {
   background: url(../img/hlth1.png) no-repeat center center;
   height: 182px;
   width: 100%;
   text-align: center;
 }
-.home.page .hlth2 {
+.home.page .hlth2,
+.japanese.page .hlth2,
+.jp.page .hlth2 {
   background: url(../img/analysis.png) no-repeat center center;
   height: 182px;
   width: 100%;
   text-align: center;
 }
-.home.page .hlth3 {
+.home.page .hlth3,
+.japanese.page .hlth3,
+.jp.page .hlth3 {
   background: url(../img/plan.png) no-repeat center center;
   height: 182px;
   width: 100%;
   text-align: center;
 }
-.home.page .hlth_ttl {
+.home.page .hlth_ttl,
+.japanese.page .hlth_ttl,
+.jp.page .hlth_ttl {
   font-size: 20px;
   color: #343434;
   font-weight: 400;
@@ -11839,11 +12016,15 @@ Site Footer
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.home.page .hlth_ttl a {
+.home.page .hlth_ttl a,
+.japanese.page .hlth_ttl a,
+.jp.page .hlth_ttl a {
   color: #343434;
   text-decoration: none;
 }
-.home.page #personal-insurance {
+.home.page #personal-insurance,
+.japanese.page #personal-insurance,
+.jp.page #personal-insurance {
   width: 100%;
   background: url(../img/personal-insurance.png) 50% 0 no-repeat fixed;
   min-height: 513px;
@@ -11851,10 +12032,14 @@ Site Footer
   text-align: center;
   font-family: 'Open Sans', sans-serif !important;
 }
-.home.page #personal-insurance .section-title {
+.home.page #personal-insurance .section-title,
+.japanese.page #personal-insurance .section-title,
+.jp.page #personal-insurance .section-title {
   background: none !important;
 }
-.home.page #personal-insurance h3 {
+.home.page #personal-insurance h3,
+.japanese.page #personal-insurance h3,
+.jp.page #personal-insurance h3 {
   background: url(../img/ttl-bg.png) no-repeat center bottom;
   padding-bottom: 20px;
   margin-bottom: 45px;
@@ -11864,15 +12049,21 @@ Site Footer
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif !important;
 }
-.home.page #personal-insurance h3 a {
+.home.page #personal-insurance h3 a,
+.japanese.page #personal-insurance h3 a,
+.jp.page #personal-insurance h3 a {
   color: #013d57;
   text-decoration: none;
 }
-.home.page #personal-insurance ul {
+.home.page #personal-insurance ul,
+.japanese.page #personal-insurance ul,
+.jp.page #personal-insurance ul {
   width: 500px;
   margin: 0 auto;
 }
-.home.page #personal-insurance ul li {
+.home.page #personal-insurance ul li,
+.japanese.page #personal-insurance ul li,
+.jp.page #personal-insurance ul li {
   width: 30%;
   float: left;
   margin-left: 1.5%;
@@ -11881,7 +12072,9 @@ Site Footer
   margin-bottom: 40px;
   list-style: none;
 }
-.home.page #personal-insurance ul li:hover .prsnl1 {
+.home.page #personal-insurance ul li:hover .prsnl1,
+.japanese.page #personal-insurance ul li:hover .prsnl1,
+.jp.page #personal-insurance ul li:hover .prsnl1 {
   background-image: url(../img/p1-hvr.png);
   height: 136px;
   background-repeat: no-repeat;
@@ -11892,7 +12085,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page #personal-insurance ul li:hover .prsnl2 {
+.home.page #personal-insurance ul li:hover .prsnl2,
+.japanese.page #personal-insurance ul li:hover .prsnl2,
+.jp.page #personal-insurance ul li:hover .prsnl2 {
   background-image: url(../img/p2-hvr.png);
   height: 136px;
   background-repeat: no-repeat;
@@ -11903,7 +12098,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page #personal-insurance ul li:hover .prsnl3 {
+.home.page #personal-insurance ul li:hover .prsnl3,
+.japanese.page #personal-insurance ul li:hover .prsnl3,
+.jp.page #personal-insurance ul li:hover .prsnl3 {
   background-image: url(../img/p3-hvr.png);
   height: 136px;
   background-repeat: no-repeat;
@@ -11914,7 +12111,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page #personal-insurance ul li:hover .prsnl-ttl {
+.home.page #personal-insurance ul li:hover .prsnl-ttl,
+.japanese.page #personal-insurance ul li:hover .prsnl-ttl,
+.jp.page #personal-insurance ul li:hover .prsnl-ttl {
   color: #00b3ff;
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
@@ -11922,15 +12121,21 @@ Site Footer
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
-.home.page .prsnl-icn {
+.home.page .prsnl-icn,
+.japanese.page .prsnl-icn,
+.jp.page .prsnl-icn {
   width: 122px;
   height: 110px;
   margin: 0 auto;
 }
-.home.page .prsnl-icn a {
+.home.page .prsnl-icn a,
+.japanese.page .prsnl-icn a,
+.jp.page .prsnl-icn a {
   display: block;
 }
-.home.page .prsnl1 {
+.home.page .prsnl1,
+.japanese.page .prsnl1,
+.jp.page .prsnl1 {
   background-image: url(../img/p1.png);
   background-repeat: no-repeat;
   background-position: center 10px;
@@ -11941,7 +12146,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .prsnl1:hover {
+.home.page .prsnl1:hover,
+.japanese.page .prsnl1:hover,
+.jp.page .prsnl1:hover {
   width: 122px;
   background-image: url(../img/p1-hvr.png);
   background-repeat: no-repeat;
@@ -11953,7 +12160,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .prsnl2 {
+.home.page .prsnl2,
+.japanese.page .prsnl2,
+.jp.page .prsnl2 {
   background-image: url(../img/p2.png);
   background-repeat: no-repeat;
   background-position: center 10px;
@@ -11964,7 +12173,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .prsnl2:hover {
+.home.page .prsnl2:hover,
+.japanese.page .prsnl2:hover,
+.jp.page .prsnl2:hover {
   width: 122px;
   background-image: url(../img/p2-hvr.png);
   background-repeat: no-repeat;
@@ -11976,7 +12187,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .prsnl3 {
+.home.page .prsnl3,
+.japanese.page .prsnl3,
+.jp.page .prsnl3 {
   background-image: url(../img/p3.png);
   background-repeat: no-repeat;
   background-position: center 10px;
@@ -11987,7 +12200,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .prsnl3:hover {
+.home.page .prsnl3:hover,
+.japanese.page .prsnl3:hover,
+.jp.page .prsnl3:hover {
   width: 122px;
   background-image: url(../img/p3-hvr.png);
   background-repeat: no-repeat;
@@ -11999,7 +12214,9 @@ Site Footer
   -o-transition: background 0.5s ease-in;
   transition: background 0.5s ease-in;
 }
-.home.page .prsnl-ttl {
+.home.page .prsnl-ttl,
+.japanese.page .prsnl-ttl,
+.jp.page .prsnl-ttl {
   font-size: 22px;
   color: #013d57;
   font-weight: 600;
@@ -12007,23 +12224,31 @@ Site Footer
   margin-top: 20px;
   line-height: 25px;
 }
-.home.page .prsnl-bg {
+.home.page .prsnl-bg,
+.japanese.page .prsnl-bg,
+.jp.page .prsnl-bg {
   background: url(../img/prsnl-bg.png) repeat left top;
   position: relative;
   overflow: hidden;
 }
-.home.page .srvcs {
+.home.page .srvcs,
+.japanese.page .srvcs,
+.jp.page .srvcs {
   width: 100%;
   float: left;
   text-align: left;
   padding: 35px 0;
   font-family: 'Open Sans', sans-serif !important;
 }
-.home.page .srvcs-lft {
+.home.page .srvcs-lft,
+.japanese.page .srvcs-lft,
+.jp.page .srvcs-lft {
   width: 62%;
   float: left;
 }
-.home.page .srvcs-lft h4 {
+.home.page .srvcs-lft h4,
+.japanese.page .srvcs-lft h4,
+.jp.page .srvcs-lft h4 {
   background: url(../img/arrw.png) no-repeat left top;
   font-size: 20px;
   color: #b1be36;
@@ -12032,11 +12257,15 @@ Site Footer
   margin-bottom: 5px;
   line-height: 30px;
 }
-.home.page .srvcs-lft h4 a {
+.home.page .srvcs-lft h4 a,
+.japanese.page .srvcs-lft h4 a,
+.jp.page .srvcs-lft h4 a {
   color: #b1be36;
   text-decoration: none;
 }
-.home.page .srvcs-lft h4 a:hover {
+.home.page .srvcs-lft h4 a:hover,
+.japanese.page .srvcs-lft h4 a:hover,
+.jp.page .srvcs-lft h4 a:hover {
   color: #ffffff;
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
@@ -12044,11 +12273,15 @@ Site Footer
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
-.home.page .srvcs-rght {
+.home.page .srvcs-rght,
+.japanese.page .srvcs-rght,
+.jp.page .srvcs-rght {
   width: 38%;
   float: right;
 }
-.home.page .srvcs-rght h4 {
+.home.page .srvcs-rght h4,
+.japanese.page .srvcs-rght h4,
+.jp.page .srvcs-rght h4 {
   background: url(../img/arrw.png) no-repeat left top;
   font-size: 20px;
   color: #b1be36;
@@ -12057,11 +12290,15 @@ Site Footer
   margin-bottom: 5px;
   line-height: 30px;
 }
-.home.page .srvcs-rght h4 a {
+.home.page .srvcs-rght h4 a,
+.japanese.page .srvcs-rght h4 a,
+.jp.page .srvcs-rght h4 a {
   color: #b1be36;
   text-decoration: none;
 }
-.home.page .srvcs-rght h4 a:hover {
+.home.page .srvcs-rght h4 a:hover,
+.japanese.page .srvcs-rght h4 a:hover,
+.jp.page .srvcs-rght h4 a:hover {
   color: #ffffff;
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
@@ -12069,7 +12306,9 @@ Site Footer
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
-.home.page #connected-2 {
+.home.page #connected-2,
+.japanese.page #connected-2,
+.jp.page #connected-2 {
   width: 100%;
   background: #ffffff;
   padding-top: 80px;
@@ -12077,7 +12316,9 @@ Site Footer
   padding-bottom: 80px;
   font-family: 'Open Sans', sans-serif !important;
 }
-.home.page #connected-2 h4 {
+.home.page #connected-2 h4,
+.japanese.page #connected-2 h4,
+.jp.page #connected-2 h4 {
   background: url(../img/ttl-bg.png) no-repeat center bottom !important;
   padding-bottom: 20px;
   margin-bottom: 25px;
@@ -12086,11 +12327,15 @@ Site Footer
   color: #333333;
   text-transform: uppercase;
 }
-.home.page #connected-2 h4 a {
+.home.page #connected-2 h4 a,
+.japanese.page #connected-2 h4 a,
+.jp.page #connected-2 h4 a {
   border-bottom: 0 !important;
   color: #333333 !important;
 }
-.home.page #connected-2 h4 a:hover {
+.home.page #connected-2 h4 a:hover,
+.japanese.page #connected-2 h4 a:hover,
+.jp.page #connected-2 h4 a:hover {
   border-bottom: 0 !important;
   text-decoration: none !important;
 }

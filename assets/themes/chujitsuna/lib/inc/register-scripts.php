@@ -19,7 +19,7 @@ function msdlab_add_styles() {
         wp_enqueue_style('adexfont',get_stylesheet_directory_uri().'/lib/css/custom-font.css');
         wp_enqueue_style('msd-style',get_stylesheet_directory_uri().'/lib/css/style.css',$queue);
         $queue[] = 'msd-style';
-        if(is_front_page()){
+        if(is_front_page() || is_page('japanese') || is_page('jp')){
             wp_enqueue_style('msd-homepage-style',get_stylesheet_directory_uri().'/lib/css/homepage.css',$queue);
             $queue[] = 'msd-homepage-style';
         }    

@@ -35,7 +35,7 @@ add_action( 'genesis_after_header', 'msdlab_header_after',50 );
  * Move nav into header
  */
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
-add_action( 'genesis_header', 'genesis_do_nav' );
+add_action( 'genesis_before_header', 'chujitsuna_do_nav' );
 
 /*** SIDEBARS ***/
 add_action('genesis_before', 'msdlab_ro_layout_logic'); //This ensures that the primary sidebar is always to the left.
