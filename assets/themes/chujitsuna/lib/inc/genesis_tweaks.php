@@ -15,6 +15,11 @@ add_theme_support( 'genesis-structural-wraps', array(
 'footer'
 ) );
 
+if(is_admin()){
+    add_filter( 'manage_pages_columns', 'SAC_pages'  );
+    add_action( 'manage_pages_custom_column', 'SAC_pages_data' , 10, 2);
+}
+
 /*** HEADER ***/
 add_action('wp_head','msdlab_add_apple_touch_icons');
 add_action('wp_head','msdlab_fonts_for_exploder');

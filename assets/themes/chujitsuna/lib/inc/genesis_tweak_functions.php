@@ -595,3 +595,21 @@ function msdlab_fonts_for_exploder() {
         }    
     }
 }
+
+
+     function SAC_pages( $defaults ) {
+        $pos = array_search('title',array_keys($defaults));
+        $defaults = array_merge(
+            array_slice($defaults, 0, $pos+1),
+            array('SAC_Slug' => __( 'Page Slug' )),
+            array_slice($defaults, $pos+1)
+        );
+        return $defaults;
+    }
+
+     function SAC_pages_data( $column_name, $id ) {
+        if ( $column_name == 'SAC_Slug' ) {
+            $page_slug = get_page( $id )->post_name;
+            echo $page_slug;
+        }
+    }
