@@ -3,11 +3,16 @@ Sidebars
 ---------------------------------------------------------------------------------------------------- */
 
 .sidebar {
-  color: @ltgrey;
+  color: @white;
 }
 
 .sidebar a {
-  border-bottom: 1px solid #ddd;
+  color: @white;
+  border-bottom: 1px solid @white;
+  &:hover{
+    text-decoration: none;
+    color: @offwhite;
+  }
 }
 
 .sidebar p:last-child {
@@ -27,17 +32,21 @@ Sidebars
 
 .sidebar .widget {
   border-radius: 0px;
+  background-color: @dkblue;
+  margin: 1rem 0;
+  padding: 2rem;
   .widget-title{
-    color: @orange;
-    text-transform: uppercase;
+    color: @white;
     font-size: 19px;
     font-size: 1.9rem;
     text-align: center;
   }
-}
-
-.sidebar .enews-widget {
-  background-color: #333;
+  &:nth-child(2){
+    background-color: @green;
+  }
+  &:nth-child(3){
+    background-color: @blue;
+  }
 }
 
 .sidebar{
@@ -55,15 +64,15 @@ Sidebars
   text-align: center;
   .link{
     a{
-      color: @dkgrey;
+      color: @white;
       border: 0;
       i{
-        color: @orange;
+        color: @white;
       }
     }
   }
 }
 span.fa-stack{
-  color: @blue;
+  color: @white;
 }
 }

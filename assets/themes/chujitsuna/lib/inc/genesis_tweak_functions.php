@@ -80,7 +80,7 @@ function msdlab_header_right(){
     }
 }
 /**
- * Determin which menu to display
+ * Determine which menu to display
  */
 function chujitsuna_do_nav(){
     if(get_section() == 'japanese' || get_section == 'jp'){
@@ -168,30 +168,29 @@ function msdlab_add_extra_theme_sidebars(){
     //* Remove the header right widget area
     //unregister_sidebar( 'header-right' );
     genesis_register_sidebar(array(
-    'name' => 'Pre-header Sidebar',
-    'description' => 'Widget above the logo/nav header',
-    'id' => 'pre-header'
-            ));
-    genesis_register_sidebar(array(
     'name' => 'Post-header Sidebar',
     'description' => 'Widget after header',
     'id' => 'post-header'
             ));
     genesis_register_sidebar(array(
-    'name' => 'Page Footer Widget',
-    'description' => 'Widget on page footer',
-    'id' => 'msdlab_page_footer'
-            ));
-    genesis_register_sidebar(array(
-    'name' => 'Blog Sidebar',
-    'description' => 'Widgets on the Blog Pages',
-    'id' => 'blog'
+    'name' => 'Japanese Sidebar',
+    'description' => 'Widgets on the Japanese Pages',
+    'id' => 'jp'
             ));
 }
 
-function msdlab_do_blog_sidebar(){
-    if(is_active_sidebar('blog')){
-        dynamic_sidebar('blog');
+function msdlab_select_sidebars(){
+    global $post,$section;
+    if(is_page() && ($section == 'japanese' || $section == 'jp' ) ){
+        add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_content_sidebar' );
+        remove_action('genesis_sidebar', 'genesis_do_sidebar');
+        add_action('genesis_sidebar', 'msdlab_do_jp_sidebar');
+    }
+}
+
+function msdlab_do_jp_sidebar(){
+    if(is_active_sidebar('jp')){
+        dynamic_sidebar('jp');
     }
 }
 /**
@@ -233,19 +232,24 @@ function msdlab_do_section_title(){
     if(is_front_page()){
         
     } elseif(is_page()){
-        global $post;
+        global $post,$section;
         if(get_section_title()!=$post->post_title){
             add_action('genesis_entry_header','genesis_do_post_title',5);
             $weight = 'h2';
         } else {
             $weight = 'h1';
         }
+        if($section == 'jp' || $section == 'japanese'){
+            $section_title = get_japanese_subsection_title();
+        } else {
+            $section_title =  get_section_title();
+        }
         print '<div class="banner clearfix" style="background-image:url('.msdlab_get_thumbnail_url($post->ID,'full').')">';
         print '<div class="texturize">';
         print '<div class="gradient">';
         print '<div class="wrap">';
         print '<'.$weight.' class="section-title">';
-        print get_section_title();
+        print $section_title;
         print '</'.$weight.'>';
         print '</div>';
         print '</div>';
@@ -256,6 +260,10 @@ function msdlab_do_section_title(){
     } else {
         genesis_do_post_title();
     }
+}
+
+function get_japanese_subsection_title(){
+   return "Japanese section title goes here";
 }
 
 function msdlab_add_portfolio_prefix($content){

@@ -10446,10 +10446,15 @@ li.comment {
 Sidebars
 ---------------------------------------------------------------------------------------------------- */
 .sidebar {
-  color: #999;
+  color: #FFF;
 }
 .sidebar a {
-  border-bottom: 1px solid #ddd;
+  color: #FFF;
+  border-bottom: 1px solid #FFF;
+}
+.sidebar a:hover {
+  text-decoration: none;
+  color: #f7f7f7;
 }
 .sidebar p:last-child {
   margin-bottom: 0;
@@ -10465,16 +10470,21 @@ Sidebars
 }
 .sidebar .widget {
   border-radius: 0px;
+  background-color: #013D57;
+  margin: 1rem 0;
+  padding: 2rem;
 }
 .sidebar .widget .widget-title {
-  color: #f90;
-  text-transform: uppercase;
+  color: #FFF;
   font-size: 19px;
   font-size: 1.9rem;
   text-align: center;
 }
-.sidebar .enews-widget {
-  background-color: #333;
+.sidebar .widget:nth-child(2) {
+  background-color: #b1be36;
+}
+.sidebar .widget:nth-child(3) {
+  background-color: #0096D6;
 }
 .sidebar {
   /*Text Widget with Click */
@@ -10509,14 +10519,14 @@ Sidebars
   text-align: center;
 }
 .sidebar .widget_sp_image .link a {
-  color: #5f5f5f;
+  color: #FFF;
   border: 0;
 }
 .sidebar .widget_sp_image .link a i {
-  color: #f90;
+  color: #FFF;
 }
 .sidebar span.fa-stack {
-  color: #0096D6;
+  color: #FFF;
 }
 /*
 Footer Widgets
@@ -11228,7 +11238,10 @@ Site Footer
 }
 .home.page .page-title-area,
 .japanese.page .page-title-area,
-.jp.page .page-title-area {
+.jp.page .page-title-area,
+.home.page .site-inner,
+.japanese.page .site-inner,
+.jp.page .site-inner {
   display: none;
 }
 .home.page .section-why-loyalty-group,
