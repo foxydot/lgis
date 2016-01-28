@@ -263,7 +263,24 @@ function msdlab_do_section_title(){
 }
 
 function get_japanese_subsection_title(){
-   return "Japanese section title goes here";
+   return get_jp_section_title();
+}
+
+function get_jp_section_title(){
+    global $post;
+    $post_data = get_post(get_jp_topmost_parent($post->ID));
+    $section = $post_data->post_title;
+    return $section;
+}
+
+function get_jp_topmost_parent($post_id){
+    $parent_id = get_post($post_id)->post_parent;
+    if($parent_id == "354"){
+        $parent_id = $post_id;
+    }else{
+        $parent_id = get_jp_topmost_parent($parent_id);
+    }
+    return $parent_id;
 }
 
 function msdlab_add_portfolio_prefix($content){
