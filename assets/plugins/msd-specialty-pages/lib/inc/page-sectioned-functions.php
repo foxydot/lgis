@@ -215,6 +215,7 @@ class MSDSectionedPage{
         // build scenes
         <?php
             $i = 0;
+            if($parallax_ids):
             foreach($parallax_ids AS $p_id):
         ?>
         new ScrollScene({options:{triggerElement:"#<?php print $p_id; ?>"}})
@@ -223,6 +224,7 @@ class MSDSectionedPage{
         <?php 
             $i++;
             endforeach;
+            endif;
         ?>
             $("#floating_nav").sticky({ topSpacing: 0 });
         });
