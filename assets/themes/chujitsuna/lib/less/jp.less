@@ -1,6 +1,6 @@
 @import 'mixins';
 .entry-content{
-  h1{}
+  h1{font-size: 2.6rem;}
   h2{}
   h3{color:@white;background-color: @dkblue;padding: 0.5rem;}
   h4{color:@white;background-color: @dkblue;padding: 0.5rem;}
@@ -8,4 +8,24 @@
   h6{}
   strong{color: @blue;}
   i{}
+}
+//change p styling so that client can use carriage returns for spacing
+.entry-content ol, .entry-content p, .entry-content ul, .quote-caption{
+  margin: 0;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"], .button, .entry-content .button {
+    font-size: 1.2em;
+    text-transform: normal;
+}
+
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:hover, .entry-content .button:hover {
+    font-size: 1.2em;
+    text-transform: normal;
+}
+
+td{
+  border-color: @white;
+  border-width: 1px;
+  border-style: solid; 
 }

@@ -56,9 +56,18 @@ Sidebars
       .readmore{
         .button();
         float: right;
+        margin: 12px 0 0 0;
+      }
+      &:after{
+        .msd-clearfix;
       }
   }
    a {border: none;}
+    &:nth-child(2){
+      .readmore{
+        background-color: @dkblue;
+      }
+    }
 }
 .widget_sp_image{
   text-align: center;

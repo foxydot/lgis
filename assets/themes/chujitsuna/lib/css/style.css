@@ -10511,9 +10511,20 @@ Sidebars
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   float: right;
+  margin: 12px 0 0 0;
+}
+.sidebar .widget_text .textwidget:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 .sidebar .widget_text a {
   border: none;
+}
+.sidebar .widget_text:nth-child(2) .readmore {
+  background-color: #013D57;
 }
 .sidebar .widget_sp_image {
   text-align: center;

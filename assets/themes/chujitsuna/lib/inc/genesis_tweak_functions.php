@@ -83,7 +83,7 @@ function msdlab_header_right(){
  * Determine which menu to display
  */
 function chujitsuna_do_nav(){
-    if(get_section() == 'japanese' || get_section == 'jp'){
+    if(is_jp_page()){
         add_action('genesis_header','chujitsuna_do_jp_nav');
     } else {
         add_action( 'genesis_header', 'genesis_do_nav' );
@@ -181,7 +181,7 @@ function msdlab_add_extra_theme_sidebars(){
 
 function msdlab_select_sidebars(){
     global $post,$section;
-    if(is_page() && ($section == 'japanese' || $section == 'jp' ) ){
+    if(is_page() && (is_jp_page()) ){
         add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_content_sidebar' );
         remove_action('genesis_sidebar', 'genesis_do_sidebar');
         add_action('genesis_sidebar', 'msdlab_do_jp_sidebar');
@@ -218,9 +218,10 @@ function msdlab_do_title_area(){
     $postid = is_admin()?$_GET['post']:$post->ID;
     $template_file = get_post_meta($postid,'_wp_page_template',TRUE);
     if ($template_file == 'page-sectioned.php') {
-        print '<div id="page-title-area" class="page-title-area">';
+        return false;
+       /* print '<div id="page-title-area" class="page-title-area">';
         do_action('msdlab_title_area');
-        print '</div>';
+        print '</div>';*/
     } else { 
         print '<div id="page-title-area" class="page-title-area">';
         do_action('msdlab_title_area');
@@ -239,7 +240,7 @@ function msdlab_do_section_title(){
         } else {
             $weight = 'h1';
         }
-        if($section == 'jp' || $section == 'japanese'){
+        if(is_jp_page()){
             $section_title = get_japanese_subsection_title();
         } else {
             $section_title =  get_section_title();
@@ -630,3 +631,11 @@ function msdlab_fonts_for_exploder() {
             echo $page_slug;
         }
     }
+    
+function is_jp_page(){
+    if(get_section() == 'japanese' || get_section() == 'jp'){
+        return true;
+    } else {
+        return false;
+    }
+}

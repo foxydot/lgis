@@ -163,6 +163,9 @@ function msd_allow_all_embeds(){
 add_filter( 'the_content', 'msdlab_remove_empty_p', 20, 1 );
 if ( !function_exists('msdlab_remove_empty_p') ) {
 function msdlab_remove_empty_p( $content ){
+    if(is_jp_page()){
+        return $content;
+    }
     // clean up p tags around block elements
     $content = preg_replace( array(
         '#<p>\s*<(div|aside|section|article|header|footer)#',

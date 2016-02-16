@@ -51,6 +51,9 @@
   clear: both;
   visibility: hidden;
 }
+.entry-content h1 {
+  font-size: 2.6rem;
+}
 .entry-content h3 {
   color: #FFF;
   background-color: #013D57;
@@ -66,4 +69,33 @@
 }
 .entry-content strong {
   color: #0096D6;
+}
+.entry-content ol,
+.entry-content p,
+.entry-content ul,
+.quote-caption {
+  margin: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.entry-content .button {
+  font-size: 1.2em;
+  text-transform: normal;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.button:hover,
+.entry-content .button:hover {
+  font-size: 1.2em;
+  text-transform: normal;
+}
+td {
+  border-color: #FFF;
+  border-width: 1px;
+  border-style: solid;
 }
