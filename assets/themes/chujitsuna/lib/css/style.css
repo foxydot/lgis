@@ -10104,7 +10104,7 @@ Site Navigation
 }
 .nav-primary li.menu-item .sub-menu li.menu-item .sub-menu {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
 }
 .nav-primary li.menu-item .sub-menu li.last-child > a {
