@@ -99,3 +99,6 @@ td {
   border-width: 1px;
   border-style: solid;
 }
+td img.aligncenter {
+  margin: 0.5em auto;
+}

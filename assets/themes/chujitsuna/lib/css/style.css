@@ -9742,17 +9742,153 @@ img#wpstats {
   text-decoration: none;
   background-color: #0096D6;
 }
-.widget_advanced_menu .menu > li.current-menu-item li.thumbsup a:before,
-.widget_advanced_menu .menu > li.current-menu-ancestor li.thumbsup a:before {
-  content: 'k';
-}
 .widget_advanced_menu .menu > li.current-menu-item li.boxopen a:before,
 .widget_advanced_menu .menu > li.current-menu-ancestor li.boxopen a:before {
-  content: 'a';
+  content: "a";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.lightbulb a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.lightbulb a:before {
+  content: "b";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.museum a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.museum a:before {
+  content: "c";
 }
 .widget_advanced_menu .menu > li.current-menu-item li.newfile a:before,
 .widget_advanced_menu .menu > li.current-menu-ancestor li.newfile a:before {
-  content: 'd';
+  content: "d";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.people a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.people a:before {
+  content: "e";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.ribbon a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.ribbon a:before {
+  content: "f";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.rocket a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.rocket a:before {
+  content: "g";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.person a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.person a:before {
+  content: "h";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.idcard a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.idcard a:before {
+  content: "i";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.tag a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.tag a:before {
+  content: "j";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.thumbsup a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.thumbsup a:before {
+  content: "k";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.monitor a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.monitor a:before {
+  content: "l";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.scrolldown a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.scrolldown a:before {
+  content: "m";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.orgtree a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.orgtree a:before {
+  content: "n";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.shadowsquare a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.shadowsquare a:before {
+  content: "o";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.truck a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.truck a:before {
+  content: "p";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.mug a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.mug a:before {
+  content: "q";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.world a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.world a:before {
+  content: "r";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.note a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.note a:before {
+  content: "s";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.compass a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.compass a:before {
+  content: "t";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.exhibits a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.exhibits a:before {
+  content: "u";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.calendar a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.calendar a:before {
+  content: "v";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.image a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.image a:before {
+  content: "w";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.design a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.design a:before {
+  content: "x";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.umbrella a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.umbrella a:before {
+  content: "y";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.contact a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.contact a:before {
+  content: "\7a";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.leadership a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.leadership a:before {
+  content: "\42";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.tent a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.tent a:before {
+  content: "\43";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.growth a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.growth a:before {
+  content: "\41";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.camera a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.camera a:before {
+  content: "\44";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.events a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.events a:before {
+  content: "\45";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.trophy a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.trophy a:before {
+  content: "\46";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.megaphone a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.megaphone a:before {
+  content: "\48";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.note-1 a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.note-1 a:before {
+  content: "\47";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.apple-heart a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.apple-heart a:before {
+  content: "\49";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.medkit a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.medkit a:before {
+  content: "\4a";
+}
+.widget_advanced_menu .menu > li.current-menu-item li.medstar a:before,
+.widget_advanced_menu .menu > li.current-menu-ancestor li.medstar a:before {
+  content: "\4b";
 }
 .widget_advanced_menu .menu > li.current-menu-item li.current-menu-item a,
 .widget_advanced_menu .menu > li.current-menu-ancestor li.current-menu-item a {
@@ -10011,9 +10147,6 @@ Site Navigation
   position: relative;
   width: 196px;
 }
-.genesis-nav-menu .sub-menu .sub-menu {
-  margin: -54px 0 0 190px;
-}
 .genesis-nav-menu .menu-item:hover {
   position: static;
 }
@@ -10105,7 +10238,10 @@ Site Navigation
 .nav-primary li.menu-item .sub-menu li.menu-item .sub-menu {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -190;
+}
+.nav-primary li.menu-item .sub-menu li.menu-item:hover > .sub-menu {
+  left: 190px;
 }
 .nav-primary li.menu-item .sub-menu li.last-child > a {
   border: 0;
