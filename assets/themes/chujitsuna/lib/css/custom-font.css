@@ -105,6 +105,42 @@
 .ro-umbrella:before {
   content: "y";
 }
+.ro-contact:before {
+  content: "\7a";
+}
+.ro-leadership:before {
+  content: "\42";
+}
+.ro-tent:before {
+  content: "\43";
+}
+.ro-growth:before {
+  content: "\41";
+}
+.ro-camera:before {
+  content: "\44";
+}
+.ro-events:before {
+  content: "\45";
+}
+.ro-trophy:before {
+  content: "\46";
+}
+.ro-megaphone:before {
+  content: "\48";
+}
+.ro-note-1:before {
+  content: "\47";
+}
+.ro-apple-heart:before {
+  content: "\49";
+}
+.ro-medkit:before {
+  content: "\4a";
+}
+.ro-medstar:before {
+  content: "\4b";
+}
 .entry-content ul.fa-ul li {
   list-style-type: none;
 }

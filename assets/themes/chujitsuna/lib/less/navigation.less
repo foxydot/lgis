@@ -55,10 +55,6 @@ Site Navigation
   }
 }
 
-.genesis-nav-menu .sub-menu .sub-menu {
-  margin: -54px 0 0 190px;
-}
-
 .genesis-nav-menu .menu-item:hover {
   position: static;
 }
@@ -150,11 +146,17 @@ Site Navigation
         .sub-menu{
           position: absolute;
           top: 0;
-          left: 0;
+          left: -190;
           li.menu-item{
             a{
               
             }
+          }
+        }
+        &:hover{
+          >.sub-menu{
+            left: 190px;
+            //top:-54px;
           }
         }
       }
