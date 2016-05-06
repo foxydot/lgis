@@ -70,3 +70,19 @@ function msdlab_mailto_function($atts, $content){
 add_shortcode('columns','column_shortcode');
 
 add_shortcode('sitemap','msdlab_sitemap');
+
+add_shortcode('animated-icon','vimals_animated_icon_handler');
+function vimals_animated_icon_handler($atts, $content){
+    extract( shortcode_atts( array(
+    'class' => 'icn,icn1',
+    'link' => false
+    ), $atts ) );
+    $classes = explode(',',$class);
+    if($link){
+        $inner = '<a href="'.$link.'" class="'.$classes[1].'">&nbsp;</a>';
+    } else {
+        $inner = '<span class="'.$classes[1].'">&nbsp;</span>';
+    }
+    $wrap = '<div class="'.$classes[0].'">'.$inner.'</div>';
+    return $wrap;
+}
