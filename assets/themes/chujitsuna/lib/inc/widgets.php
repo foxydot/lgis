@@ -6,15 +6,16 @@ if(class_exists('MSDConnected')){
 class KohlerConnected extends MSDConnected {
     function widget( $args, $instance ) {
         global $msd_social;
+        $jp = preg_match('|/Japanese|ig', $_SERVER['REQUEST_URI'])===1?true:false;
         extract($args);
         extract($instance);
         $title = apply_filters( 'widget_title', empty($instance['title']) ? '' : $instance['title'], $instance );
         $text = apply_filters( 'widget_text', empty( $instance['text'] ) ? '' : $instance['text'], $instance );
         echo $before_widget;
         if ( !empty( $title ) ) { print $before_title.$title.$after_title; } 
-        if ( !empty( $text )){ print '<div class="connected-text">'.$text.'</div>'; }
+        if ( !empty( $text ) && !$jp){ print '<div class="connected-text">'.$text.'</div>'; }
         print '<div class="wrap">';
-        if(($address||$phone||$tollfree||$fax||$email||$social)&&$form_id > 0){
+        if(($jp||$address||$phone||$tollfree||$fax||$email||$social)&&$form_id > 0){
             print '<div class="col-md-7">';
         }
         if ( $form_id > 0 ){
@@ -23,10 +24,10 @@ class KohlerConnected extends MSDConnected {
             print '</div>';
             //add_action( 'wp_footer', array(&$this,'tabindex_javascript'), 60);
         }
-        if(($address||$phone||$tollfree||$fax||$email||$social)&&$form_id > 0){
+        if(($jp||$address||$phone||$tollfree||$fax||$email||$social)&&$form_id > 0){
             print '</div>';
         }
-        if(($address||$phone||$tollfree||$fax||$email||$social)&&$form_id > 0){
+        if(($jp||$address||$phone||$tollfree||$fax||$email||$social)&&$form_id > 0){
             print '<div class="col-md-5 align-right">';
         }
         if ( $address ){
@@ -119,7 +120,7 @@ class KohlerConnected extends MSDConnected {
             if( $social ){ print '<div class="connected-social">'.$social.'</div>'; }
         }   
         
-        if(($address||$phone||$tollfree||$fax||$email||$social)&&$form_id > 0){
+        if(($jp||$address||$phone||$tollfree||$fax||$email||$social)&&$form_id > 0){
             print '</div>';
         }
         print '</div>';
