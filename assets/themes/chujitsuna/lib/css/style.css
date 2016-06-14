@@ -12795,9 +12795,6 @@ address {
   }
 }
 @media (max-width: 1040px) {
-  .site-header .widget-area {
-    width: 70% !important;
-  }
   .header-image .site-header .title-area {
     width: 20% !important;
     float: left !important;
@@ -12859,11 +12856,6 @@ address {
   .japanese.page .header-image .site-header .title-area,
   .jp.page .header-image .site-header .title-area {
     width: 40% !important;
-  }
-  .home.page .site-header .widget-area,
-  .japanese.page .site-header .widget-area,
-  .jp.page .site-header .widget-area {
-    width: 50% !important;
   }
 }
 @media (max-width: 685px) {
@@ -13012,9 +13004,6 @@ address {
     position: relative;
     z-index: 999;
   }
-  .site-header .widget-area {
-    width: 100% !important;
-  }
   .site-header .widget-area .widget {
     display: inherit !important;
   }
@@ -13084,6 +13073,19 @@ address {
   /* Enter Your Custom Styles Here */
   .mobile-only {
     display: block;
+  }
+  .home.page .site-header .widget-area,
+  .japanese.page .site-header .widget-area,
+  .jp.page .site-header .widget-area {
+    float: none;
+    width: 70%;
+    margin: 0.5em auto;
+    z-index: 400;
+  }
+  .home.page .site-header .widget-area #lang_sel,
+  .japanese.page .site-header .widget-area #lang_sel,
+  .jp.page .site-header .widget-area #lang_sel {
+    z-index: 400;
   }
   .nav-primary {
     float: none;
