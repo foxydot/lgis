@@ -10772,6 +10772,11 @@ Site Footer
 .page-title-area {
   background: #5f5f5f;
 }
+.page-title-area .banner {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 .page-title-area .section-title,
 .page-title-area .page-title,
 .page-title-area .entry-title {
